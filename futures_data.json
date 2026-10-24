@@ -1,0 +1,750 @@
+{
+  "source": "FinMind",
+  "dataset": "TaiwanFuturesInstitutionalInvestors",
+  "description": "外資 TX + MTX/4 淨未平倉（大臺指等值口數）",
+  "updated_at_taipei": "2026-10-24T10:59:57+08:00",
+  "latest_date": "2026-10-22",
+  "latest_net_tx_equivalent": -88082.0,
+  "streak_days": 123,
+  "signal": "orange",
+  "data": [
+    {
+      "date": "2026-04-27",
+      "tx_net": -44223,
+      "mtx_net": 90,
+      "net_tx_equivalent": -44200.5
+    },
+    {
+      "date": "2026-04-28",
+      "tx_net": -45869,
+      "mtx_net": -1777,
+      "net_tx_equivalent": -46313.25
+    },
+    {
+      "date": "2026-04-29",
+      "tx_net": -47074,
+      "mtx_net": 1629,
+      "net_tx_equivalent": -46666.75
+    },
+    {
+      "date": "2026-04-30",
+      "tx_net": -44044,
+      "mtx_net": 4534,
+      "net_tx_equivalent": -42910.5
+    },
+    {
+      "date": "2026-05-04",
+      "tx_net": -43504,
+      "mtx_net": 4591,
+      "net_tx_equivalent": -42356.25
+    },
+    {
+      "date": "2026-05-05",
+      "tx_net": -48687,
+      "mtx_net": 2166,
+      "net_tx_equivalent": -48145.5
+    },
+    {
+      "date": "2026-05-06",
+      "tx_net": -50967,
+      "mtx_net": 20,
+      "net_tx_equivalent": -50962.0
+    },
+    {
+      "date": "2026-05-07",
+      "tx_net": -51132,
+      "mtx_net": 58,
+      "net_tx_equivalent": -51117.5
+    },
+    {
+      "date": "2026-05-08",
+      "tx_net": -54530,
+      "mtx_net": 1526,
+      "net_tx_equivalent": -54148.5
+    },
+    {
+      "date": "2026-05-11",
+      "tx_net": -54225,
+      "mtx_net": 686,
+      "net_tx_equivalent": -54053.5
+    },
+    {
+      "date": "2026-05-12",
+      "tx_net": -53072,
+      "mtx_net": 2490,
+      "net_tx_equivalent": -52449.5
+    },
+    {
+      "date": "2026-05-13",
+      "tx_net": -52760,
+      "mtx_net": 3815,
+      "net_tx_equivalent": -51806.25
+    },
+    {
+      "date": "2026-05-14",
+      "tx_net": -51068,
+      "mtx_net": 3504,
+      "net_tx_equivalent": -50192.0
+    },
+    {
+      "date": "2026-05-15",
+      "tx_net": -50963,
+      "mtx_net": 4206,
+      "net_tx_equivalent": -49911.5
+    },
+    {
+      "date": "2026-05-18",
+      "tx_net": -44996,
+      "mtx_net": 4123,
+      "net_tx_equivalent": -43965.25
+    },
+    {
+      "date": "2026-05-19",
+      "tx_net": -45376,
+      "mtx_net": 2725,
+      "net_tx_equivalent": -44694.75
+    },
+    {
+      "date": "2026-05-20",
+      "tx_net": -42744,
+      "mtx_net": -38,
+      "net_tx_equivalent": -42753.5
+    },
+    {
+      "date": "2026-05-21",
+      "tx_net": -44454,
+      "mtx_net": 3434,
+      "net_tx_equivalent": -43595.5
+    },
+    {
+      "date": "2026-05-22",
+      "tx_net": -46483,
+      "mtx_net": 2792,
+      "net_tx_equivalent": -45785.0
+    },
+    {
+      "date": "2026-05-25",
+      "tx_net": -51458,
+      "mtx_net": 510,
+      "net_tx_equivalent": -51330.5
+    },
+    {
+      "date": "2026-05-26",
+      "tx_net": -54391,
+      "mtx_net": -2807,
+      "net_tx_equivalent": -55092.75
+    },
+    {
+      "date": "2026-05-27",
+      "tx_net": -56302,
+      "mtx_net": 1340,
+      "net_tx_equivalent": -55967.0
+    },
+    {
+      "date": "2026-05-28",
+      "tx_net": -58196,
+      "mtx_net": -360,
+      "net_tx_equivalent": -58286.0
+    },
+    {
+      "date": "2026-05-29",
+      "tx_net": -60650,
+      "mtx_net": 322,
+      "net_tx_equivalent": -60569.5
+    },
+    {
+      "date": "2026-06-01",
+      "tx_net": -64673,
+      "mtx_net": -2249,
+      "net_tx_equivalent": -65235.25
+    },
+    {
+      "date": "2026-06-02",
+      "tx_net": -67018,
+      "mtx_net": -3310,
+      "net_tx_equivalent": -67845.5
+    },
+    {
+      "date": "2026-06-03",
+      "tx_net": -66772,
+      "mtx_net": -427,
+      "net_tx_equivalent": -66878.75
+    },
+    {
+      "date": "2026-06-04",
+      "tx_net": -69476,
+      "mtx_net": -3562,
+      "net_tx_equivalent": -70366.5
+    },
+    {
+      "date": "2026-06-05",
+      "tx_net": -69146,
+      "mtx_net": -1051,
+      "net_tx_equivalent": -69408.75
+    },
+    {
+      "date": "2026-06-08",
+      "tx_net": -65501,
+      "mtx_net": 3858,
+      "net_tx_equivalent": -64536.5
+    },
+    {
+      "date": "2026-06-09",
+      "tx_net": -61871,
+      "mtx_net": 3754,
+      "net_tx_equivalent": -60932.5
+    },
+    {
+      "date": "2026-06-10",
+      "tx_net": -61949,
+      "mtx_net": 6698,
+      "net_tx_equivalent": -60274.5
+    },
+    {
+      "date": "2026-06-11",
+      "tx_net": -63168,
+      "mtx_net": 4930,
+      "net_tx_equivalent": -61935.5
+    },
+    {
+      "date": "2026-06-12",
+      "tx_net": -65039,
+      "mtx_net": 5734,
+      "net_tx_equivalent": -63605.5
+    },
+    {
+      "date": "2026-06-15",
+      "tx_net": -66734,
+      "mtx_net": 2919,
+      "net_tx_equivalent": -66004.25
+    },
+    {
+      "date": "2026-06-16",
+      "tx_net": -69847,
+      "mtx_net": 933,
+      "net_tx_equivalent": -69613.75
+    },
+    {
+      "date": "2026-06-17",
+      "tx_net": -67394,
+      "mtx_net": -2345,
+      "net_tx_equivalent": -67980.25
+    },
+    {
+      "date": "2026-06-18",
+      "tx_net": -68337,
+      "mtx_net": 2185,
+      "net_tx_equivalent": -67790.75
+    },
+    {
+      "date": "2026-06-22",
+      "tx_net": -70290,
+      "mtx_net": 3381,
+      "net_tx_equivalent": -69444.75
+    },
+    {
+      "date": "2026-06-23",
+      "tx_net": -76502,
+      "mtx_net": -3553,
+      "net_tx_equivalent": -77390.25
+    },
+    {
+      "date": "2026-06-24",
+      "tx_net": -83605,
+      "mtx_net": 882,
+      "net_tx_equivalent": -83384.5
+    },
+    {
+      "date": "2026-06-25",
+      "tx_net": -81051,
+      "mtx_net": 1615,
+      "net_tx_equivalent": -80647.25
+    },
+    {
+      "date": "2026-06-26",
+      "tx_net": -76391,
+      "mtx_net": -268,
+      "net_tx_equivalent": -76458.0
+    },
+    {
+      "date": "2026-06-29",
+      "tx_net": -76627,
+      "mtx_net": 4532,
+      "net_tx_equivalent": -75494.0
+    },
+    {
+      "date": "2026-06-30",
+      "tx_net": -83063,
+      "mtx_net": 2785,
+      "net_tx_equivalent": -82366.75
+    },
+    {
+      "date": "2026-07-01",
+      "tx_net": -84168,
+      "mtx_net": 3132,
+      "net_tx_equivalent": -83385.0
+    },
+    {
+      "date": "2026-07-02",
+      "tx_net": -84487,
+      "mtx_net": 418,
+      "net_tx_equivalent": -84382.5
+    },
+    {
+      "date": "2026-07-03",
+      "tx_net": -81052,
+      "mtx_net": 2566,
+      "net_tx_equivalent": -80410.5
+    },
+    {
+      "date": "2026-07-06",
+      "tx_net": -80087,
+      "mtx_net": 1903,
+      "net_tx_equivalent": -79611.25
+    },
+    {
+      "date": "2026-07-07",
+      "tx_net": -80042,
+      "mtx_net": 1630,
+      "net_tx_equivalent": -79634.5
+    },
+    {
+      "date": "2026-07-08",
+      "tx_net": -81268,
+      "mtx_net": -419,
+      "net_tx_equivalent": -81372.75
+    },
+    {
+      "date": "2026-07-09",
+      "tx_net": -80730,
+      "mtx_net": 4280,
+      "net_tx_equivalent": -79660.0
+    },
+    {
+      "date": "2026-07-13",
+      "tx_net": -81066,
+      "mtx_net": 7030,
+      "net_tx_equivalent": -79308.5
+    },
+    {
+      "date": "2026-07-14",
+      "tx_net": -83390,
+      "mtx_net": 5038,
+      "net_tx_equivalent": -82130.5
+    },
+    {
+      "date": "2026-07-15",
+      "tx_net": -79557,
+      "mtx_net": 561,
+      "net_tx_equivalent": -79416.75
+    },
+    {
+      "date": "2026-07-16",
+      "tx_net": -84453,
+      "mtx_net": -1501,
+      "net_tx_equivalent": -84828.25
+    },
+    {
+      "date": "2026-07-17",
+      "tx_net": -86189,
+      "mtx_net": -2233,
+      "net_tx_equivalent": -86747.25
+    },
+    {
+      "date": "2026-07-20",
+      "tx_net": -78337,
+      "mtx_net": -1107,
+      "net_tx_equivalent": -78613.75
+    },
+    {
+      "date": "2026-07-21",
+      "tx_net": -78490,
+      "mtx_net": 3154,
+      "net_tx_equivalent": -77701.5
+    },
+    {
+      "date": "2026-07-22",
+      "tx_net": -76595,
+      "mtx_net": 423,
+      "net_tx_equivalent": -76489.25
+    },
+    {
+      "date": "2026-07-23",
+      "tx_net": -75198,
+      "mtx_net": 853,
+      "net_tx_equivalent": -74984.75
+    },
+    {
+      "date": "2026-07-24",
+      "tx_net": -76260,
+      "mtx_net": -3225,
+      "net_tx_equivalent": -77066.25
+    },
+    {
+      "date": "2026-07-27",
+      "tx_net": -78699,
+      "mtx_net": -1176,
+      "net_tx_equivalent": -78993.0
+    },
+    {
+      "date": "2026-07-28",
+      "tx_net": -82255,
+      "mtx_net": -3100,
+      "net_tx_equivalent": -83030.0
+    },
+    {
+      "date": "2026-07-29",
+      "tx_net": -82785,
+      "mtx_net": -731,
+      "net_tx_equivalent": -82967.75
+    },
+    {
+      "date": "2026-07-30",
+      "tx_net": -81017,
+      "mtx_net": 2063,
+      "net_tx_equivalent": -80501.25
+    },
+    {
+      "date": "2026-07-31",
+      "tx_net": -82515,
+      "mtx_net": -1178,
+      "net_tx_equivalent": -82809.5
+    },
+    {
+      "date": "2026-08-03",
+      "tx_net": -90038,
+      "mtx_net": -961,
+      "net_tx_equivalent": -90278.25
+    },
+    {
+      "date": "2026-08-04",
+      "tx_net": -87858,
+      "mtx_net": 926,
+      "net_tx_equivalent": -87626.5
+    },
+    {
+      "date": "2026-08-05",
+      "tx_net": -87199,
+      "mtx_net": -1023,
+      "net_tx_equivalent": -87454.75
+    },
+    {
+      "date": "2026-08-06",
+      "tx_net": -89383,
+      "mtx_net": -6249,
+      "net_tx_equivalent": -90945.25
+    },
+    {
+      "date": "2026-08-07",
+      "tx_net": -87911,
+      "mtx_net": -2804,
+      "net_tx_equivalent": -88612.0
+    },
+    {
+      "date": "2026-08-10",
+      "tx_net": -89201,
+      "mtx_net": -3456,
+      "net_tx_equivalent": -90065.0
+    },
+    {
+      "date": "2026-08-11",
+      "tx_net": -88924,
+      "mtx_net": -3835,
+      "net_tx_equivalent": -89882.75
+    },
+    {
+      "date": "2026-08-12",
+      "tx_net": -86633,
+      "mtx_net": -1353,
+      "net_tx_equivalent": -86971.25
+    },
+    {
+      "date": "2026-08-13",
+      "tx_net": -86249,
+      "mtx_net": -2186,
+      "net_tx_equivalent": -86795.5
+    },
+    {
+      "date": "2026-08-14",
+      "tx_net": -85179,
+      "mtx_net": -735,
+      "net_tx_equivalent": -85362.75
+    },
+    {
+      "date": "2026-08-17",
+      "tx_net": -83474,
+      "mtx_net": -155,
+      "net_tx_equivalent": -83512.75
+    },
+    {
+      "date": "2026-08-18",
+      "tx_net": -83078,
+      "mtx_net": -632,
+      "net_tx_equivalent": -83236.0
+    },
+    {
+      "date": "2026-08-19",
+      "tx_net": -81501,
+      "mtx_net": -1144,
+      "net_tx_equivalent": -81787.0
+    },
+    {
+      "date": "2026-08-20",
+      "tx_net": -82423,
+      "mtx_net": -1081,
+      "net_tx_equivalent": -82693.25
+    },
+    {
+      "date": "2026-08-21",
+      "tx_net": -82594,
+      "mtx_net": -704,
+      "net_tx_equivalent": -82770.0
+    },
+    {
+      "date": "2026-08-24",
+      "tx_net": -82529,
+      "mtx_net": -2727,
+      "net_tx_equivalent": -83210.75
+    },
+    {
+      "date": "2026-08-25",
+      "tx_net": -85380,
+      "mtx_net": 1058,
+      "net_tx_equivalent": -85115.5
+    },
+    {
+      "date": "2026-08-26",
+      "tx_net": -83654,
+      "mtx_net": 5638,
+      "net_tx_equivalent": -82244.5
+    },
+    {
+      "date": "2026-08-27",
+      "tx_net": -84836,
+      "mtx_net": 1763,
+      "net_tx_equivalent": -84395.25
+    },
+    {
+      "date": "2026-08-28",
+      "tx_net": -83655,
+      "mtx_net": 3282,
+      "net_tx_equivalent": -82834.5
+    },
+    {
+      "date": "2026-08-31",
+      "tx_net": -82970,
+      "mtx_net": 246,
+      "net_tx_equivalent": -82908.5
+    },
+    {
+      "date": "2026-09-01",
+      "tx_net": -78706,
+      "mtx_net": 5006,
+      "net_tx_equivalent": -77454.5
+    },
+    {
+      "date": "2026-09-02",
+      "tx_net": -85329,
+      "mtx_net": -192,
+      "net_tx_equivalent": -85377.0
+    },
+    {
+      "date": "2026-09-03",
+      "tx_net": -81575,
+      "mtx_net": 2822,
+      "net_tx_equivalent": -80869.5
+    },
+    {
+      "date": "2026-09-04",
+      "tx_net": -82389,
+      "mtx_net": 6255,
+      "net_tx_equivalent": -80825.25
+    },
+    {
+      "date": "2026-09-07",
+      "tx_net": -79399,
+      "mtx_net": 2682,
+      "net_tx_equivalent": -78728.5
+    },
+    {
+      "date": "2026-09-08",
+      "tx_net": -82262,
+      "mtx_net": -1724,
+      "net_tx_equivalent": -82693.0
+    },
+    {
+      "date": "2026-09-09",
+      "tx_net": -81066,
+      "mtx_net": 1337,
+      "net_tx_equivalent": -80731.75
+    },
+    {
+      "date": "2026-09-10",
+      "tx_net": -83918,
+      "mtx_net": 1234,
+      "net_tx_equivalent": -83609.5
+    },
+    {
+      "date": "2026-09-11",
+      "tx_net": -85067,
+      "mtx_net": 1287,
+      "net_tx_equivalent": -84745.25
+    },
+    {
+      "date": "2026-09-14",
+      "tx_net": -82658,
+      "mtx_net": 4625,
+      "net_tx_equivalent": -81501.75
+    },
+    {
+      "date": "2026-09-15",
+      "tx_net": -83223,
+      "mtx_net": 4032,
+      "net_tx_equivalent": -82215.0
+    },
+    {
+      "date": "2026-09-16",
+      "tx_net": -76351,
+      "mtx_net": 2396,
+      "net_tx_equivalent": -75752.0
+    },
+    {
+      "date": "2026-09-17",
+      "tx_net": -78674,
+      "mtx_net": -943,
+      "net_tx_equivalent": -78909.75
+    },
+    {
+      "date": "2026-09-18",
+      "tx_net": -76110,
+      "mtx_net": 5292,
+      "net_tx_equivalent": -74787.0
+    },
+    {
+      "date": "2026-09-21",
+      "tx_net": -74081,
+      "mtx_net": 5667,
+      "net_tx_equivalent": -72664.25
+    },
+    {
+      "date": "2026-09-22",
+      "tx_net": -75568,
+      "mtx_net": 3156,
+      "net_tx_equivalent": -74779.0
+    },
+    {
+      "date": "2026-09-23",
+      "tx_net": -76084,
+      "mtx_net": 2752,
+      "net_tx_equivalent": -75396.0
+    },
+    {
+      "date": "2026-09-24",
+      "tx_net": -77031,
+      "mtx_net": -876,
+      "net_tx_equivalent": -77250.0
+    },
+    {
+      "date": "2026-09-29",
+      "tx_net": -79029,
+      "mtx_net": 1157,
+      "net_tx_equivalent": -78739.75
+    },
+    {
+      "date": "2026-09-30",
+      "tx_net": -78151,
+      "mtx_net": 2602,
+      "net_tx_equivalent": -77500.5
+    },
+    {
+      "date": "2026-10-01",
+      "tx_net": -79554,
+      "mtx_net": 1988,
+      "net_tx_equivalent": -79057.0
+    },
+    {
+      "date": "2026-10-02",
+      "tx_net": -80304,
+      "mtx_net": 1033,
+      "net_tx_equivalent": -80045.75
+    },
+    {
+      "date": "2026-10-05",
+      "tx_net": -77004,
+      "mtx_net": 8790,
+      "net_tx_equivalent": -74806.5
+    },
+    {
+      "date": "2026-10-06",
+      "tx_net": -79517,
+      "mtx_net": 4414,
+      "net_tx_equivalent": -78413.5
+    },
+    {
+      "date": "2026-10-07",
+      "tx_net": -79101,
+      "mtx_net": 3950,
+      "net_tx_equivalent": -78113.5
+    },
+    {
+      "date": "2026-10-08",
+      "tx_net": -83194,
+      "mtx_net": -602,
+      "net_tx_equivalent": -83344.5
+    },
+    {
+      "date": "2026-10-12",
+      "tx_net": -82806,
+      "mtx_net": 1679,
+      "net_tx_equivalent": -82386.25
+    },
+    {
+      "date": "2026-10-13",
+      "tx_net": -87239,
+      "mtx_net": -1058,
+      "net_tx_equivalent": -87503.5
+    },
+    {
+      "date": "2026-10-14",
+      "tx_net": -86814,
+      "mtx_net": 190,
+      "net_tx_equivalent": -86766.5
+    },
+    {
+      "date": "2026-10-15",
+      "tx_net": -97582,
+      "mtx_net": -3928,
+      "net_tx_equivalent": -98564.0
+    },
+    {
+      "date": "2026-10-16",
+      "tx_net": -93675,
+      "mtx_net": -751,
+      "net_tx_equivalent": -93862.75
+    },
+    {
+      "date": "2026-10-19",
+      "tx_net": -91145,
+      "mtx_net": 589,
+      "net_tx_equivalent": -90997.75
+    },
+    {
+      "date": "2026-10-20",
+      "tx_net": -89748,
+      "mtx_net": 2104,
+      "net_tx_equivalent": -89222.0
+    },
+    {
+      "date": "2026-10-21",
+      "tx_net": -86072,
+      "mtx_net": -1075,
+      "net_tx_equivalent": -86340.75
+    },
+    {
+      "date": "2026-10-22",
+      "tx_net": -87297,
+      "mtx_net": -3140,
+      "net_tx_equivalent": -88082.0
+    }
+  ]
+}
