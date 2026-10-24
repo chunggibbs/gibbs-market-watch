@@ -12,12 +12,61 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 .status{display:flex;justify-content:center;align-items:center;gap:14px;font-size:clamp(17px,4vw,23px);font-weight:700;line-height:1.5}
 .light{width:28px;height:28px;border-radius:50%;background:#8a95a6;flex-shrink:0}.orange .light{background:#ff961a;box-shadow:0 0 22px #ff961a88}.blue .light{background:#359cff;box-shadow:0 0 22px #359cff88}
 .date{color:#b7c8de;margin-top:35px;font-size:14px}.note{color:#8193ac;font-size:12px;margin-top:16px;line-height:1.7}
+.institutional{margin-top:22px;padding:30px 22px;text-align:left}.institutional .caption{text-align:center;margin-bottom:22px}
+.institution-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:17px 0;border-top:1px solid #34445b}
+.institution-row:first-of-type{border-top:0}.institution-name{font-size:17px;font-weight:650}.institution-value{font-size:20px;font-weight:750;font-variant-numeric:tabular-nums;text-align:right}
+.institution-state{grid-column:1/-1;display:flex;gap:9px;align-items:center;color:#b7c8de;font-size:14px}
+.institution-state .light{width:13px;height:13px}.institution-date{text-align:center;margin-top:15px;color:#b7c8de;font-size:13px}
+@media(max-width:390px){.institution-name{font-size:15px}.institution-value{font-size:17px}}
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
 <section class="card" id="card"><div class="caption">USD / TWD</div><div class="rate" id="rate">—</div>
 <div class="status"><span class="light" aria-hidden="true"></span><span id="status">讀取資料中…</span></div>
-<div class="date" id="date">最新資料日期：—</div><div class="note">資料來源：Yahoo Finance · 每日台灣時間19:00排程更新<br>非即時報價；燈號僅供市場觀察。</div></section></main>
+<div class="date" id="date">最新資料日期：—</div><div class="note">資料來源：Yahoo Finance · 每日台灣時間19:00排程更新<br>非即時報價；燈號僅供市場觀察。</div></section>
+<section class="card institutional" aria-labelledby="institution-title">
+<div class="caption" id="institution-title">三大法人買賣超</div>
+<div id="institution-rows"><div class="institution-state">讀取資料中…</div></div>
+<div class="institution-date" id="institution-date">最新資料日期：—</div>
+<div class="note" style="text-align:center">資料來源：FinMind · 週一至週五台灣時間17:30排程更新<br>單位：新台幣億元；連續天數依交易日計算，燈號僅供市場觀察。</div>
+</section></main>
 <script>
 (async()=>{try{const response=await fetch('market_data.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('尚未取得匯率資料');const d=await response.json();if(!['orange','blue','neutral'].includes(d.signal)||!Number.isFinite(Number(d.close)))throw Error('資料格式錯誤');document.getElementById('card').classList.add(d.signal);document.getElementById('rate').textContent=Number(d.close).toFixed(4);document.getElementById('status').textContent=d.signal==='orange'?'台幣偏弱｜注意持股風險':d.signal==='blue'?'台幣偏強':'中性｜持續觀察';document.getElementById('date').textContent='最新資料日期：'+d.date;}catch(e){document.getElementById('status').textContent='資料尚未就緒';document.getElementById('date').textContent='請先執行 GitHub Actions 更新資料';}})();
+(async()=>{
+ const targets=[['foreign_investor','外資及陸資（不含外資自營商）'],['investment_trust','投信'],['dealer_self','自營商（自行買賣）']];
+ const host=document.getElementById('institution-rows');
+ try{
+  const response=await fetch('institutional_data.json?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('無法取得三大法人資料');
+  const payload=await response.json();
+  if(!Array.isArray(payload.data)||!payload.data.length)throw Error('資料為空');
+  const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)).sort((a,b)=>a.date.localeCompare(b.date));
+  if(!records.length)throw Error('沒有有效交易日');
+  const latest=records[records.length-1];
+  host.replaceChildren();
+  for(const [key,name] of targets){
+   const value=Number(latest[key]?.net_buy_100m);
+   if(!Number.isFinite(value))throw Error(name+'缺少最新數值');
+   let direction=0,days=0;
+   for(let i=records.length-1;i>=0;i--){
+    const v=Number(records[i][key]?.net_buy_100m);
+    if(!Number.isFinite(v)||v===0)break;
+    const sign=Math.sign(v);
+    if(direction===0)direction=sign;
+    if(sign!==direction)break;
+    days++;
+   }
+   const signal=days>=3?(direction>0?'blue':'orange'):'neutral';
+   const state=days>=3?`連續${direction>0?'買超':'賣超'} ${days} 個交易日`:(days?`連續${direction>0?'買超':'賣超'} ${days} 日｜尚未成形`:'尚未成形');
+   const row=document.createElement('div');row.className='institution-row '+signal;
+   const title=document.createElement('div');title.className='institution-name';title.textContent=name;
+   const amount=document.createElement('div');amount.className='institution-value';amount.textContent=(value>0?'+':'')+value.toLocaleString('zh-TW',{minimumFractionDigits:2,maximumFractionDigits:2})+' 億';
+   const stateBox=document.createElement('div');stateBox.className='institution-state';
+   const light=document.createElement('span');light.className='light';light.setAttribute('aria-hidden','true');
+   const label=document.createElement('span');label.textContent=state;
+   stateBox.append(light,label);row.append(title,amount,stateBox);host.append(row);
+  }
+  document.getElementById('institution-date').textContent='最新資料日期：'+latest.date;
+ }catch(error){host.textContent='三大法人資料尚未就緒：'+error.message;}
+})();
 </script></body></html>
