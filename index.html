@@ -21,6 +21,7 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 .futures{margin-top:22px;padding:32px 24px}.futures .caption{margin-bottom:24px}.futures-value{font-size:clamp(35px,8vw,55px);font-weight:750;font-variant-numeric:tabular-nums}.futures-state{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:12px;font-size:17px;font-weight:700}.futures-state .light{width:20px;height:20px}.futures-detail{color:#b7c8de;font-size:13px;margin-top:14px}
 @media(max-width:620px){.rate-line{gap:12px}.rate{font-size:clamp(42px,10vw,60px)}.status{font-size:clamp(13px,3.4vw,17px)}}
 @media(max-width:390px){.institution-name{font-size:15px}.institution-value{font-size:17px}}
+.large-traders{margin-top:22px;padding:32px 24px}.large-traders .caption{margin-bottom:24px}
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
@@ -40,6 +41,14 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 <div class="futures-detail">TX ＋ MTX ÷ 4（大臺指等值口數）</div>
 <div class="institution-date" id="futures-date">最新資料日期：—</div>
 <div class="note">資料來源：FinMind · 週一至週五台灣時間19:00排程更新<br>連續天數依資料所含交易日計算；燈號僅供市場觀察。</div>
+</section>
+<section class="card futures large-traders" id="large-traders-card" aria-labelledby="large-traders-title">
+<div class="caption" id="large-traders-title">期貨前十大交易人未沖銷部位</div>
+<div class="futures-value" id="large-traders-value">—</div>
+<div class="futures-state"><span class="light" aria-hidden="true"></span><span id="large-traders-status">讀取資料中…</span></div>
+<div class="futures-detail" id="large-traders-detail">TX · 全部交易人 · 所有到期月份合計</div>
+<div class="institution-date" id="large-traders-date">最新資料日期：—</div>
+<div class="note">資料來源：FinMind · 週一至週五台灣時間19:00排程更新<br>淨部位＝多方未沖銷－空方未沖銷；燈號僅供市場觀察。</div>
 </section></main>
 <script>
 (async()=>{try{const response=await fetch('market_data.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('尚未取得匯率資料');const d=await response.json();if(!['orange','blue','neutral'].includes(d.signal)||!Number.isFinite(Number(d.close)))throw Error('資料格式錯誤');document.getElementById('card').classList.add(d.signal);document.getElementById('rate').textContent=Number(d.close).toFixed(2);document.getElementById('status').textContent=d.signal==='orange'?'台幣偏弱｜注意持股風險':d.signal==='blue'?'台幣偏強':'中性｜持續觀察';document.getElementById('date').textContent='最新資料日期：'+d.date;}catch(e){document.getElementById('status').textContent='資料尚未就緒';document.getElementById('date').textContent='請先執行 GitHub Actions 更新資料';}})();
@@ -103,5 +112,31 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
   status.textContent=days>=3?`連續${prefix}${bounded?'至少 ': ' '}${days} 個交易日`:days>0?`連續${prefix} ${days} 日｜尚未成形`:'淨部位為零｜尚未成形';
   document.getElementById('futures-date').textContent='最新資料日期：'+latest.date;
  }catch(error){status.textContent='期貨資料尚未就緒';document.getElementById('futures-date').textContent=error.message;}
+})();
+
+(async()=>{
+ const card=document.getElementById('large-traders-card');
+ const status=document.getElementById('large-traders-status');
+ try{
+  const response=await fetch('large_traders_data.json?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('無法取得前十大交易人資料');
+  const payload=await response.json();
+  if(payload.futures_id!=='TX'||payload.contract_type!=='all')throw Error('商品或契約範圍不符');
+  if(!Array.isArray(payload.data)||!payload.data.length)throw Error('資料為空');
+  const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&Number.isFinite(Number(r.buy_top10))&&Number.isFinite(Number(r.sell_top10))&&Number.isFinite(Number(r.net))&&Number(r.buy_top10)-Number(r.sell_top10)===Number(r.net)).sort((a,b)=>a.date.localeCompare(b.date));
+  if(!records.length)throw Error('沒有有效交易日');
+  const latest=records[records.length-1];
+  const net=Number(latest.net),direction=Math.sign(net);
+  let days=0;
+  if(direction!==0){for(let i=records.length-1;i>=0;i--){if(Math.sign(Number(records[i].net))!==direction)break;days++;}}
+  const signal=days>=3?(direction>0?'blue':'orange'):'neutral';
+  card.classList.add(signal);
+  document.getElementById('large-traders-value').textContent=(net>0?'+':'')+net.toLocaleString('zh-TW')+' 口';
+  const prefix=direction>0?'淨多':direction<0?'淨空':'中性';
+  const bounded=days===records.length&&days>0;
+  status.textContent=days>=3?`連續${prefix} ${bounded?'至少 ':''}${days} 個交易日`:days>0?`連續${prefix} ${days} 日｜尚未成形`:'淨部位為零｜尚未成形';
+  document.getElementById('large-traders-detail').textContent=`TX · 多方 ${Number(latest.buy_top10).toLocaleString('zh-TW')} 口／空方 ${Number(latest.sell_top10).toLocaleString('zh-TW')} 口 · 所有到期月份合計`;
+  document.getElementById('large-traders-date').textContent='最新資料日期：'+latest.date;
+ }catch(error){status.textContent='前十大交易人資料尚未就緒';document.getElementById('large-traders-date').textContent=error.message;}
 })();
 </script></body></html>
