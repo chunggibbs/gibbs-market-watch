@@ -1,0 +1,1106 @@
+{
+  "source": "FinMind",
+  "dataset": "TaiwanStockTotalInstitutionalInvestors",
+  "unit": "TWD 100 million (億元)",
+  "updated_at_taipei": "2026-10-24T10:08:43+08:00",
+  "data": [
+    {
+      "date": "2026-07-27",
+      "foreign_investor": {
+        "buy_100m": 3350.8391,
+        "sell_100m": 3270.4366,
+        "net_buy_100m": 80.4025
+      },
+      "investment_trust": {
+        "buy_100m": 165.0351,
+        "sell_100m": 160.2224,
+        "net_buy_100m": 4.8127
+      },
+      "dealer_self": {
+        "buy_100m": 79.804,
+        "sell_100m": 84.2239,
+        "net_buy_100m": -4.4199
+      }
+    },
+    {
+      "date": "2026-07-28",
+      "foreign_investor": {
+        "buy_100m": 2924.4958,
+        "sell_100m": 3799.342,
+        "net_buy_100m": -874.8463
+      },
+      "investment_trust": {
+        "buy_100m": 219.491,
+        "sell_100m": 203.3728,
+        "net_buy_100m": 16.1182
+      },
+      "dealer_self": {
+        "buy_100m": 58.2195,
+        "sell_100m": 70.4803,
+        "net_buy_100m": -12.2608
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "foreign_investor": {
+        "buy_100m": 4685.7499,
+        "sell_100m": 4908.2685,
+        "net_buy_100m": -222.5186
+      },
+      "investment_trust": {
+        "buy_100m": 235.7131,
+        "sell_100m": 178.6566,
+        "net_buy_100m": 57.0565
+      },
+      "dealer_self": {
+        "buy_100m": 145.006,
+        "sell_100m": 155.2398,
+        "net_buy_100m": -10.2338
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "foreign_investor": {
+        "buy_100m": 4985.0867,
+        "sell_100m": 5468.2049,
+        "net_buy_100m": -483.1182
+      },
+      "investment_trust": {
+        "buy_100m": 282.9513,
+        "sell_100m": 142.9772,
+        "net_buy_100m": 139.9741
+      },
+      "dealer_self": {
+        "buy_100m": 115.9745,
+        "sell_100m": 121.0182,
+        "net_buy_100m": -5.0437
+      }
+    },
+    {
+      "date": "2026-07-31",
+      "foreign_investor": {
+        "buy_100m": 4013.2825,
+        "sell_100m": 3337.7443,
+        "net_buy_100m": 675.5383
+      },
+      "investment_trust": {
+        "buy_100m": 405.4387,
+        "sell_100m": 45.2376,
+        "net_buy_100m": 360.2011
+      },
+      "dealer_self": {
+        "buy_100m": 115.7522,
+        "sell_100m": 58.345,
+        "net_buy_100m": 57.4072
+      }
+    },
+    {
+      "date": "2026-08-03",
+      "foreign_investor": {
+        "buy_100m": 3514.3681,
+        "sell_100m": 3706.2772,
+        "net_buy_100m": -191.9092
+      },
+      "investment_trust": {
+        "buy_100m": 354.6812,
+        "sell_100m": 121.4344,
+        "net_buy_100m": 233.2468
+      },
+      "dealer_self": {
+        "buy_100m": 72.1978,
+        "sell_100m": 130.4656,
+        "net_buy_100m": -58.2679
+      }
+    },
+    {
+      "date": "2026-08-04",
+      "foreign_investor": {
+        "buy_100m": 4476.6149,
+        "sell_100m": 4533.9303,
+        "net_buy_100m": -57.3153
+      },
+      "investment_trust": {
+        "buy_100m": 470.1158,
+        "sell_100m": 198.4642,
+        "net_buy_100m": 271.6516
+      },
+      "dealer_self": {
+        "buy_100m": 99.1973,
+        "sell_100m": 185.9402,
+        "net_buy_100m": -86.7429
+      }
+    },
+    {
+      "date": "2026-08-05",
+      "foreign_investor": {
+        "buy_100m": 4945.8375,
+        "sell_100m": 4042.7542,
+        "net_buy_100m": 903.0833
+      },
+      "investment_trust": {
+        "buy_100m": 290.2377,
+        "sell_100m": 177.5763,
+        "net_buy_100m": 112.6614
+      },
+      "dealer_self": {
+        "buy_100m": 130.8366,
+        "sell_100m": 154.1088,
+        "net_buy_100m": -23.2723
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "foreign_investor": {
+        "buy_100m": 3924.027,
+        "sell_100m": 3903.8288,
+        "net_buy_100m": 20.1982
+      },
+      "investment_trust": {
+        "buy_100m": 238.5707,
+        "sell_100m": 144.4869,
+        "net_buy_100m": 94.0839
+      },
+      "dealer_self": {
+        "buy_100m": 107.1146,
+        "sell_100m": 108.1648,
+        "net_buy_100m": -1.0502
+      }
+    },
+    {
+      "date": "2026-08-07",
+      "foreign_investor": {
+        "buy_100m": 3103.3995,
+        "sell_100m": 3510.5569,
+        "net_buy_100m": -407.1574
+      },
+      "investment_trust": {
+        "buy_100m": 167.9969,
+        "sell_100m": 180.0141,
+        "net_buy_100m": -12.0172
+      },
+      "dealer_self": {
+        "buy_100m": 94.3393,
+        "sell_100m": 87.1649,
+        "net_buy_100m": 7.1744
+      }
+    },
+    {
+      "date": "2026-08-10",
+      "foreign_investor": {
+        "buy_100m": 3305.7833,
+        "sell_100m": 2788.3782,
+        "net_buy_100m": 517.4052
+      },
+      "investment_trust": {
+        "buy_100m": 182.67,
+        "sell_100m": 148.6593,
+        "net_buy_100m": 34.0107
+      },
+      "dealer_self": {
+        "buy_100m": 106.5428,
+        "sell_100m": 53.7612,
+        "net_buy_100m": 52.7816
+      }
+    },
+    {
+      "date": "2026-08-11",
+      "foreign_investor": {
+        "buy_100m": 3550.2294,
+        "sell_100m": 3326.9426,
+        "net_buy_100m": 223.2868
+      },
+      "investment_trust": {
+        "buy_100m": 173.7437,
+        "sell_100m": 141.503,
+        "net_buy_100m": 32.2407
+      },
+      "dealer_self": {
+        "buy_100m": 86.9627,
+        "sell_100m": 76.4168,
+        "net_buy_100m": 10.546
+      }
+    },
+    {
+      "date": "2026-08-12",
+      "foreign_investor": {
+        "buy_100m": 3195.6504,
+        "sell_100m": 3085.4422,
+        "net_buy_100m": 110.2081
+      },
+      "investment_trust": {
+        "buy_100m": 211.7487,
+        "sell_100m": 188.986,
+        "net_buy_100m": 22.7627
+      },
+      "dealer_self": {
+        "buy_100m": 91.2617,
+        "sell_100m": 80.0509,
+        "net_buy_100m": 11.2109
+      }
+    },
+    {
+      "date": "2026-08-13",
+      "foreign_investor": {
+        "buy_100m": 4354.5935,
+        "sell_100m": 3597.6483,
+        "net_buy_100m": 756.9452
+      },
+      "investment_trust": {
+        "buy_100m": 283.0582,
+        "sell_100m": 298.0756,
+        "net_buy_100m": -15.0174
+      },
+      "dealer_self": {
+        "buy_100m": 140.6601,
+        "sell_100m": 108.0804,
+        "net_buy_100m": 32.5798
+      }
+    },
+    {
+      "date": "2026-08-14",
+      "foreign_investor": {
+        "buy_100m": 4324.8725,
+        "sell_100m": 3871.3592,
+        "net_buy_100m": 453.5133
+      },
+      "investment_trust": {
+        "buy_100m": 296.339,
+        "sell_100m": 216.613,
+        "net_buy_100m": 79.726
+      },
+      "dealer_self": {
+        "buy_100m": 111.6043,
+        "sell_100m": 138.9642,
+        "net_buy_100m": -27.3599
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "foreign_investor": {
+        "buy_100m": 3696.6315,
+        "sell_100m": 3242.1587,
+        "net_buy_100m": 454.4729
+      },
+      "investment_trust": {
+        "buy_100m": 260.8505,
+        "sell_100m": 438.619,
+        "net_buy_100m": -177.7685
+      },
+      "dealer_self": {
+        "buy_100m": 114.053,
+        "sell_100m": 78.6515,
+        "net_buy_100m": 35.4015
+      }
+    },
+    {
+      "date": "2026-08-18",
+      "foreign_investor": {
+        "buy_100m": 3807.159,
+        "sell_100m": 3927.0172,
+        "net_buy_100m": -119.8581
+      },
+      "investment_trust": {
+        "buy_100m": 410.7371,
+        "sell_100m": 372.4657,
+        "net_buy_100m": 38.2714
+      },
+      "dealer_self": {
+        "buy_100m": 80.9389,
+        "sell_100m": 102.6698,
+        "net_buy_100m": -21.7309
+      }
+    },
+    {
+      "date": "2026-08-19",
+      "foreign_investor": {
+        "buy_100m": 3496.8493,
+        "sell_100m": 3913.2438,
+        "net_buy_100m": -416.3944
+      },
+      "investment_trust": {
+        "buy_100m": 202.7623,
+        "sell_100m": 368.7717,
+        "net_buy_100m": -166.0094
+      },
+      "dealer_self": {
+        "buy_100m": 109.4463,
+        "sell_100m": 149.0682,
+        "net_buy_100m": -39.6219
+      }
+    },
+    {
+      "date": "2026-08-20",
+      "foreign_investor": {
+        "buy_100m": 3446.9851,
+        "sell_100m": 3373.8087,
+        "net_buy_100m": 73.1763
+      },
+      "investment_trust": {
+        "buy_100m": 246.0481,
+        "sell_100m": 266.5248,
+        "net_buy_100m": -20.4768
+      },
+      "dealer_self": {
+        "buy_100m": 66.6249,
+        "sell_100m": 88.5434,
+        "net_buy_100m": -21.9185
+      }
+    },
+    {
+      "date": "2026-08-21",
+      "foreign_investor": {
+        "buy_100m": 3182.6416,
+        "sell_100m": 2899.5873,
+        "net_buy_100m": 283.0542
+      },
+      "investment_trust": {
+        "buy_100m": 116.5759,
+        "sell_100m": 95.5613,
+        "net_buy_100m": 21.0146
+      },
+      "dealer_self": {
+        "buy_100m": 92.6539,
+        "sell_100m": 63.5585,
+        "net_buy_100m": 29.0954
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "foreign_investor": {
+        "buy_100m": 2399.6927,
+        "sell_100m": 2557.054,
+        "net_buy_100m": -157.3613
+      },
+      "investment_trust": {
+        "buy_100m": 146.5807,
+        "sell_100m": 116.0326,
+        "net_buy_100m": 30.5482
+      },
+      "dealer_self": {
+        "buy_100m": 59.1778,
+        "sell_100m": 59.3248,
+        "net_buy_100m": -0.147
+      }
+    },
+    {
+      "date": "2026-08-25",
+      "foreign_investor": {
+        "buy_100m": 2919.7431,
+        "sell_100m": 2927.609,
+        "net_buy_100m": -7.8658
+      },
+      "investment_trust": {
+        "buy_100m": 145.5869,
+        "sell_100m": 185.4267,
+        "net_buy_100m": -39.8398
+      },
+      "dealer_self": {
+        "buy_100m": 74.3137,
+        "sell_100m": 64.3438,
+        "net_buy_100m": 9.9699
+      }
+    },
+    {
+      "date": "2026-08-26",
+      "foreign_investor": {
+        "buy_100m": 3238.0778,
+        "sell_100m": 2871.9459,
+        "net_buy_100m": 366.1319
+      },
+      "investment_trust": {
+        "buy_100m": 216.5003,
+        "sell_100m": 182.8422,
+        "net_buy_100m": 33.6581
+      },
+      "dealer_self": {
+        "buy_100m": 108.1344,
+        "sell_100m": 60.7493,
+        "net_buy_100m": 47.3851
+      }
+    },
+    {
+      "date": "2026-08-27",
+      "foreign_investor": {
+        "buy_100m": 3639.667,
+        "sell_100m": 3148.7249,
+        "net_buy_100m": 490.9421
+      },
+      "investment_trust": {
+        "buy_100m": 197.9605,
+        "sell_100m": 212.4645,
+        "net_buy_100m": -14.504
+      },
+      "dealer_self": {
+        "buy_100m": 140.5617,
+        "sell_100m": 80.734,
+        "net_buy_100m": 59.8278
+      }
+    },
+    {
+      "date": "2026-08-28",
+      "foreign_investor": {
+        "buy_100m": 4003.1867,
+        "sell_100m": 3585.6457,
+        "net_buy_100m": 417.541
+      },
+      "investment_trust": {
+        "buy_100m": 185.8161,
+        "sell_100m": 187.7816,
+        "net_buy_100m": -1.9655
+      },
+      "dealer_self": {
+        "buy_100m": 114.4054,
+        "sell_100m": 113.0573,
+        "net_buy_100m": 1.3481
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "foreign_investor": {
+        "buy_100m": 6566.0546,
+        "sell_100m": 6709.978,
+        "net_buy_100m": -143.9234
+      },
+      "investment_trust": {
+        "buy_100m": 214.4247,
+        "sell_100m": 254.429,
+        "net_buy_100m": -40.0043
+      },
+      "dealer_self": {
+        "buy_100m": 114.1194,
+        "sell_100m": 125.9091,
+        "net_buy_100m": -11.7897
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "foreign_investor": {
+        "buy_100m": 4600.6089,
+        "sell_100m": 4333.5329,
+        "net_buy_100m": 267.076
+      },
+      "investment_trust": {
+        "buy_100m": 413.9703,
+        "sell_100m": 277.9677,
+        "net_buy_100m": 136.0026
+      },
+      "dealer_self": {
+        "buy_100m": 158.3195,
+        "sell_100m": 126.7483,
+        "net_buy_100m": 31.5712
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "foreign_investor": {
+        "buy_100m": 3186.4702,
+        "sell_100m": 4100.0156,
+        "net_buy_100m": -913.5454
+      },
+      "investment_trust": {
+        "buy_100m": 205.9148,
+        "sell_100m": 241.1918,
+        "net_buy_100m": -35.2771
+      },
+      "dealer_self": {
+        "buy_100m": 103.2298,
+        "sell_100m": 101.6657,
+        "net_buy_100m": 1.5641
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "foreign_investor": {
+        "buy_100m": 3322.1855,
+        "sell_100m": 3803.6448,
+        "net_buy_100m": -481.4593
+      },
+      "investment_trust": {
+        "buy_100m": 203.1139,
+        "sell_100m": 196.1782,
+        "net_buy_100m": 6.9356
+      },
+      "dealer_self": {
+        "buy_100m": 103.1655,
+        "sell_100m": 159.9535,
+        "net_buy_100m": -56.788
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "foreign_investor": {
+        "buy_100m": 3627.9614,
+        "sell_100m": 3065.8318,
+        "net_buy_100m": 562.1295
+      },
+      "investment_trust": {
+        "buy_100m": 149.6819,
+        "sell_100m": 158.7905,
+        "net_buy_100m": -9.1087
+      },
+      "dealer_self": {
+        "buy_100m": 102.0686,
+        "sell_100m": 87.0056,
+        "net_buy_100m": 15.063
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "foreign_investor": {
+        "buy_100m": 3784.0576,
+        "sell_100m": 2900.9802,
+        "net_buy_100m": 883.0774
+      },
+      "investment_trust": {
+        "buy_100m": 252.6541,
+        "sell_100m": 165.4135,
+        "net_buy_100m": 87.2405
+      },
+      "dealer_self": {
+        "buy_100m": 156.6334,
+        "sell_100m": 96.9178,
+        "net_buy_100m": 59.7156
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "foreign_investor": {
+        "buy_100m": 3512.3091,
+        "sell_100m": 3379.6235,
+        "net_buy_100m": 132.6856
+      },
+      "investment_trust": {
+        "buy_100m": 218.0042,
+        "sell_100m": 290.4353,
+        "net_buy_100m": -72.4311
+      },
+      "dealer_self": {
+        "buy_100m": 96.8583,
+        "sell_100m": 125.711,
+        "net_buy_100m": -28.8527
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "foreign_investor": {
+        "buy_100m": 3382.0234,
+        "sell_100m": 3172.7796,
+        "net_buy_100m": 209.2438
+      },
+      "investment_trust": {
+        "buy_100m": 171.7614,
+        "sell_100m": 150.9163,
+        "net_buy_100m": 20.8451
+      },
+      "dealer_self": {
+        "buy_100m": 85.7171,
+        "sell_100m": 97.8972,
+        "net_buy_100m": -12.1801
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "foreign_investor": {
+        "buy_100m": 2718.7126,
+        "sell_100m": 3102.0542,
+        "net_buy_100m": -383.3416
+      },
+      "investment_trust": {
+        "buy_100m": 166.6827,
+        "sell_100m": 133.1738,
+        "net_buy_100m": 33.5089
+      },
+      "dealer_self": {
+        "buy_100m": 72.269,
+        "sell_100m": 107.8759,
+        "net_buy_100m": -35.6069
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "foreign_investor": {
+        "buy_100m": 2470.0909,
+        "sell_100m": 3362.7954,
+        "net_buy_100m": -892.7044
+      },
+      "investment_trust": {
+        "buy_100m": 182.814,
+        "sell_100m": 100.6767,
+        "net_buy_100m": 82.1373
+      },
+      "dealer_self": {
+        "buy_100m": 64.1455,
+        "sell_100m": 114.5392,
+        "net_buy_100m": -50.3937
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "foreign_investor": {
+        "buy_100m": 2363.5948,
+        "sell_100m": 2733.2305,
+        "net_buy_100m": -369.6357
+      },
+      "investment_trust": {
+        "buy_100m": 166.1923,
+        "sell_100m": 129.2373,
+        "net_buy_100m": 36.955
+      },
+      "dealer_self": {
+        "buy_100m": 58.7873,
+        "sell_100m": 98.5718,
+        "net_buy_100m": -39.7845
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "foreign_investor": {
+        "buy_100m": 2247.2152,
+        "sell_100m": 2874.2042,
+        "net_buy_100m": -626.989
+      },
+      "investment_trust": {
+        "buy_100m": 126.4549,
+        "sell_100m": 146.3664,
+        "net_buy_100m": -19.9115
+      },
+      "dealer_self": {
+        "buy_100m": 69.3603,
+        "sell_100m": 56.3523,
+        "net_buy_100m": 13.008
+      }
+    },
+    {
+      "date": "2026-09-16",
+      "foreign_investor": {
+        "buy_100m": 2638.5519,
+        "sell_100m": 2818.3567,
+        "net_buy_100m": -179.8048
+      },
+      "investment_trust": {
+        "buy_100m": 269.5104,
+        "sell_100m": 163.0541,
+        "net_buy_100m": 106.4564
+      },
+      "dealer_self": {
+        "buy_100m": 79.9474,
+        "sell_100m": 116.1992,
+        "net_buy_100m": -36.2518
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "foreign_investor": {
+        "buy_100m": 3381.2433,
+        "sell_100m": 3259.3933,
+        "net_buy_100m": 121.85
+      },
+      "investment_trust": {
+        "buy_100m": 326.8803,
+        "sell_100m": 209.8497,
+        "net_buy_100m": 117.0307
+      },
+      "dealer_self": {
+        "buy_100m": 117.1234,
+        "sell_100m": 58.1811,
+        "net_buy_100m": 58.9424
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "foreign_investor": {
+        "buy_100m": 5852.4733,
+        "sell_100m": 4982.5297,
+        "net_buy_100m": 869.9436
+      },
+      "investment_trust": {
+        "buy_100m": 435.5337,
+        "sell_100m": 353.9992,
+        "net_buy_100m": 81.5345
+      },
+      "dealer_self": {
+        "buy_100m": 216.4612,
+        "sell_100m": 74.6425,
+        "net_buy_100m": 141.8187
+      }
+    },
+    {
+      "date": "2026-09-21",
+      "foreign_investor": {
+        "buy_100m": 3014.1365,
+        "sell_100m": 2809.3471,
+        "net_buy_100m": 204.7894
+      },
+      "investment_trust": {
+        "buy_100m": 281.7362,
+        "sell_100m": 235.7758,
+        "net_buy_100m": 45.9604
+      },
+      "dealer_self": {
+        "buy_100m": 178.1655,
+        "sell_100m": 66.6857,
+        "net_buy_100m": 111.4798
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "foreign_investor": {
+        "buy_100m": 3853.5254,
+        "sell_100m": 3400.3161,
+        "net_buy_100m": 453.2093
+      },
+      "investment_trust": {
+        "buy_100m": 228.4295,
+        "sell_100m": 232.0936,
+        "net_buy_100m": -3.6642
+      },
+      "dealer_self": {
+        "buy_100m": 116.0693,
+        "sell_100m": 80.9876,
+        "net_buy_100m": 35.0817
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "foreign_investor": {
+        "buy_100m": 3455.6821,
+        "sell_100m": 3082.5485,
+        "net_buy_100m": 373.1336
+      },
+      "investment_trust": {
+        "buy_100m": 174.9141,
+        "sell_100m": 222.5085,
+        "net_buy_100m": -47.5944
+      },
+      "dealer_self": {
+        "buy_100m": 89.2083,
+        "sell_100m": 66.9546,
+        "net_buy_100m": 22.2536
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "foreign_investor": {
+        "buy_100m": 2724.2126,
+        "sell_100m": 3053.8588,
+        "net_buy_100m": -329.6461
+      },
+      "investment_trust": {
+        "buy_100m": 139.2131,
+        "sell_100m": 267.4458,
+        "net_buy_100m": -128.2326
+      },
+      "dealer_self": {
+        "buy_100m": 98.8251,
+        "sell_100m": 56.4697,
+        "net_buy_100m": 42.3554
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "foreign_investor": {
+        "buy_100m": 3379.3616,
+        "sell_100m": 4005.1871,
+        "net_buy_100m": -625.8255
+      },
+      "investment_trust": {
+        "buy_100m": 164.2982,
+        "sell_100m": 158.5043,
+        "net_buy_100m": 5.7939
+      },
+      "dealer_self": {
+        "buy_100m": 71.8515,
+        "sell_100m": 79.9378,
+        "net_buy_100m": -8.0863
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "foreign_investor": {
+        "buy_100m": 3957.6166,
+        "sell_100m": 3649.051,
+        "net_buy_100m": 308.5656
+      },
+      "investment_trust": {
+        "buy_100m": 234.1301,
+        "sell_100m": 151.2222,
+        "net_buy_100m": 82.9079
+      },
+      "dealer_self": {
+        "buy_100m": 75.7294,
+        "sell_100m": 61.9173,
+        "net_buy_100m": 13.8121
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "foreign_investor": {
+        "buy_100m": 3167.1364,
+        "sell_100m": 2947.7631,
+        "net_buy_100m": 219.3733
+      },
+      "investment_trust": {
+        "buy_100m": 239.7415,
+        "sell_100m": 181.0867,
+        "net_buy_100m": 58.6548
+      },
+      "dealer_self": {
+        "buy_100m": 101.5718,
+        "sell_100m": 69.2002,
+        "net_buy_100m": 32.3716
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "foreign_investor": {
+        "buy_100m": 3197.4693,
+        "sell_100m": 3171.2513,
+        "net_buy_100m": 26.218
+      },
+      "investment_trust": {
+        "buy_100m": 267.9508,
+        "sell_100m": 210.2627,
+        "net_buy_100m": 57.6881
+      },
+      "dealer_self": {
+        "buy_100m": 102.6366,
+        "sell_100m": 55.2229,
+        "net_buy_100m": 47.4138
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "foreign_investor": {
+        "buy_100m": 4406.9131,
+        "sell_100m": 3687.947,
+        "net_buy_100m": 718.9661
+      },
+      "investment_trust": {
+        "buy_100m": 233.0037,
+        "sell_100m": 285.9353,
+        "net_buy_100m": -52.9316
+      },
+      "dealer_self": {
+        "buy_100m": 124.7521,
+        "sell_100m": 110.5985,
+        "net_buy_100m": 14.1536
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "foreign_investor": {
+        "buy_100m": 3613.6856,
+        "sell_100m": 3680.259,
+        "net_buy_100m": -66.5734
+      },
+      "investment_trust": {
+        "buy_100m": 246.105,
+        "sell_100m": 388.7542,
+        "net_buy_100m": -142.6492
+      },
+      "dealer_self": {
+        "buy_100m": 121.5567,
+        "sell_100m": 85.437,
+        "net_buy_100m": 36.1196
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "foreign_investor": {
+        "buy_100m": 3307.9836,
+        "sell_100m": 3438.4225,
+        "net_buy_100m": -130.4389
+      },
+      "investment_trust": {
+        "buy_100m": 219.4742,
+        "sell_100m": 252.708,
+        "net_buy_100m": -33.2338
+      },
+      "dealer_self": {
+        "buy_100m": 87.9805,
+        "sell_100m": 101.6547,
+        "net_buy_100m": -13.6742
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "foreign_investor": {
+        "buy_100m": 2860.5614,
+        "sell_100m": 3619.0843,
+        "net_buy_100m": -758.5229
+      },
+      "investment_trust": {
+        "buy_100m": 245.2573,
+        "sell_100m": 215.168,
+        "net_buy_100m": 30.0893
+      },
+      "dealer_self": {
+        "buy_100m": 69.723,
+        "sell_100m": 91.0409,
+        "net_buy_100m": -21.3179
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "foreign_investor": {
+        "buy_100m": 3127.2476,
+        "sell_100m": 3649.2291,
+        "net_buy_100m": -521.9815
+      },
+      "investment_trust": {
+        "buy_100m": 260.3621,
+        "sell_100m": 188.9529,
+        "net_buy_100m": 71.4093
+      },
+      "dealer_self": {
+        "buy_100m": 74.2784,
+        "sell_100m": 82.2722,
+        "net_buy_100m": -7.9937
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "foreign_investor": {
+        "buy_100m": 3421.8451,
+        "sell_100m": 5074.7501,
+        "net_buy_100m": -1652.9051
+      },
+      "investment_trust": {
+        "buy_100m": 490.5017,
+        "sell_100m": 244.2503,
+        "net_buy_100m": 246.2515
+      },
+      "dealer_self": {
+        "buy_100m": 109.2302,
+        "sell_100m": 201.7005,
+        "net_buy_100m": -92.4703
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "foreign_investor": {
+        "buy_100m": 3833.7874,
+        "sell_100m": 4034.1608,
+        "net_buy_100m": -200.3734
+      },
+      "investment_trust": {
+        "buy_100m": 319.7678,
+        "sell_100m": 159.4965,
+        "net_buy_100m": 160.2713
+      },
+      "dealer_self": {
+        "buy_100m": 76.9868,
+        "sell_100m": 102.0831,
+        "net_buy_100m": -25.0963
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "foreign_investor": {
+        "buy_100m": 3791.114,
+        "sell_100m": 6816.6689,
+        "net_buy_100m": -3025.5548
+      },
+      "investment_trust": {
+        "buy_100m": 515.7,
+        "sell_100m": 222.8672,
+        "net_buy_100m": 292.8328
+      },
+      "dealer_self": {
+        "buy_100m": 129.9403,
+        "sell_100m": 216.7743,
+        "net_buy_100m": -86.834
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "foreign_investor": {
+        "buy_100m": 3563.2436,
+        "sell_100m": 4024.7152,
+        "net_buy_100m": -461.4716
+      },
+      "investment_trust": {
+        "buy_100m": 438.485,
+        "sell_100m": 328.0099,
+        "net_buy_100m": 110.4751
+      },
+      "dealer_self": {
+        "buy_100m": 83.8144,
+        "sell_100m": 185.6003,
+        "net_buy_100m": -101.786
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "foreign_investor": {
+        "buy_100m": 2764.6034,
+        "sell_100m": 3532.0308,
+        "net_buy_100m": -767.4274
+      },
+      "investment_trust": {
+        "buy_100m": 506.9912,
+        "sell_100m": 265.5749,
+        "net_buy_100m": 241.4163
+      },
+      "dealer_self": {
+        "buy_100m": 93.9379,
+        "sell_100m": 154.1668,
+        "net_buy_100m": -60.2289
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "foreign_investor": {
+        "buy_100m": 2486.7555,
+        "sell_100m": 3282.1524,
+        "net_buy_100m": -795.3969
+      },
+      "investment_trust": {
+        "buy_100m": 340.4439,
+        "sell_100m": 152.8588,
+        "net_buy_100m": 187.5851
+      },
+      "dealer_self": {
+        "buy_100m": 65.4291,
+        "sell_100m": 133.9795,
+        "net_buy_100m": -68.5504
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "foreign_investor": {
+        "buy_100m": 3470.6935,
+        "sell_100m": 3448.3044,
+        "net_buy_100m": 22.3891
+      },
+      "investment_trust": {
+        "buy_100m": 303.989,
+        "sell_100m": 176.0037,
+        "net_buy_100m": 127.9854
+      },
+      "dealer_self": {
+        "buy_100m": 88.2731,
+        "sell_100m": 150.1478,
+        "net_buy_100m": -61.8747
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "foreign_investor": {
+        "buy_100m": 3041.3366,
+        "sell_100m": 3857.1576,
+        "net_buy_100m": -815.821
+      },
+      "investment_trust": {
+        "buy_100m": 252.6363,
+        "sell_100m": 157.7143,
+        "net_buy_100m": 94.922
+      },
+      "dealer_self": {
+        "buy_100m": 72.2969,
+        "sell_100m": 109.4596,
+        "net_buy_100m": -37.1626
+      }
+    }
+  ]
+}
