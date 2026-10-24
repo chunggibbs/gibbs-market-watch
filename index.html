@@ -22,36 +22,56 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 @media(max-width:620px){.rate-line{gap:12px}.rate{font-size:clamp(42px,10vw,60px)}.status{font-size:clamp(13px,3.4vw,17px)}}
 @media(max-width:390px){.institution-name{font-size:15px}.institution-value{font-size:17px}}
 .large-traders{margin-top:22px;padding:32px 24px}.large-traders .caption{margin-bottom:24px}
+
+/* Mobile-first interactive 20-trading-day charts */
+.chart-toggle{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:48px;padding:10px 12px;border:0;border-radius:10px;background:transparent;color:#b7c8de;font:inherit;font-size:17px;letter-spacing:.08em;cursor:pointer;touch-action:manipulation}
+.chart-toggle:focus-visible{outline:3px solid #72b7ff;outline-offset:2px}
+.chart-toggle .chevron{font-size:14px;transition:transform .15s}
+.chart-toggle[aria-expanded="true"] .chevron{transform:rotate(180deg)}
+.chart-panel[hidden]{display:none!important}
+.chart-panel{margin:20px 0 8px;padding:16px 10px 12px;border-radius:12px;background:#142033;text-align:left;min-width:0}
+.chart-heading{text-align:center;color:#b7c8de;font-size:13px;margin:0 0 10px}
+.chart-canvas{width:100%;min-width:0;overflow:hidden}
+.chart-canvas svg{width:100%;height:auto;display:block;touch-action:pan-y}
+.chart-tooltip{min-height:32px;text-align:center;color:#e8f2ff;font-size:13px;line-height:1.5;padding:5px 2px;font-variant-numeric:tabular-nums}
+.chart-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 13px;font-size:12px;color:#c5d4e6}
+.chart-legend span::before{content:'●';color:var(--series-color);margin-right:5px}
+@media(max-width:390px){body{padding:14px 10px}.card{padding:24px 14px}.institutional{padding:24px 14px}.futures,.large-traders{padding:25px 12px}.chart-panel{padding:12px 4px}}
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
-<section class="card" id="card"><div class="caption">USD / TWD</div><div class="rate-line"><div class="rate" id="rate">—</div>
+<section class="card" id="card"><button class="chart-toggle" type="button" data-chart="fx" aria-expanded="false" aria-controls="chart-fx">USD / TWD <span class="chevron" aria-hidden="true">⌄</span></button><div class="rate-line"><div class="rate" id="rate">—</div>
 <div class="status"><span class="light" aria-hidden="true"></span><span id="status">讀取資料中…</span></div></div>
+<div class="chart-panel" id="chart-fx" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
 <div class="date" id="date">最新資料日期：—</div><div class="note">資料來源：Yahoo Finance · 每日台灣時間19:00排程更新<br>非即時報價；燈號僅供市場觀察。</div></section>
 <section class="card institutional" aria-labelledby="institution-title">
-<div class="caption" id="institution-title">三大法人買賣超</div>
+<button class="chart-toggle" type="button" id="institution-title" data-chart="institution" aria-expanded="false" aria-controls="chart-institution">三大法人買賣超 <span class="chevron" aria-hidden="true">⌄</span></button>
 <div id="institution-rows"><div class="institution-state">讀取資料中…</div></div>
+<div class="chart-panel" id="chart-institution" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
 <div class="institution-date" id="institution-date">最新資料日期：—</div>
 <div class="note" style="text-align:center">資料來源：FinMind · 週一至週五台灣時間17:30排程更新<br>單位：新台幣億元；連續天數依交易日計算，燈號僅供市場觀察。</div>
 </section>
 <section class="card futures" id="futures-card" aria-labelledby="futures-title">
-<div class="caption" id="futures-title">外資臺指期貨淨未平倉</div>
+<button class="chart-toggle" type="button" id="futures-title" data-chart="futures" aria-expanded="false" aria-controls="chart-futures">外資臺指期貨淨未平倉 <span class="chevron" aria-hidden="true">⌄</span></button>
 <div class="futures-value" id="futures-value">—</div>
 <div class="futures-state"><span class="light" aria-hidden="true"></span><span id="futures-status">讀取資料中…</span></div>
 <div class="futures-detail">TX ＋ MTX ÷ 4（大臺指等值口數）</div>
+<div class="chart-panel" id="chart-futures" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
 <div class="institution-date" id="futures-date">最新資料日期：—</div>
 <div class="note">資料來源：FinMind · 週一至週五台灣時間19:00排程更新<br>連續天數依資料所含交易日計算；燈號僅供市場觀察。</div>
 </section>
 <section class="card futures large-traders" id="large-traders-card" aria-labelledby="large-traders-title">
-<div class="caption" id="large-traders-title">期貨前十大交易人未沖銷部位</div>
+<button class="chart-toggle" type="button" id="large-traders-title" data-chart="large" aria-expanded="false" aria-controls="chart-large">期貨前十大交易人未沖銷部位 <span class="chevron" aria-hidden="true">⌄</span></button>
 <div class="futures-value" id="large-traders-value">—</div>
 <div class="futures-state"><span class="light" aria-hidden="true"></span><span id="large-traders-status">讀取資料中…</span></div>
 <div class="futures-detail" id="large-traders-detail">TX · 全部交易人 · 所有到期月份合計</div>
+<div class="chart-panel" id="chart-large" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
 <div class="institution-date" id="large-traders-date">最新資料日期：—</div>
 <div class="note">資料來源：FinMind · 週一至週五台灣時間19:00排程更新<br>淨部位＝多方未沖銷－空方未沖銷；燈號僅供市場觀察。</div>
 </section></main>
 <script>
-(async()=>{try{const response=await fetch('market_data.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('尚未取得匯率資料');const d=await response.json();if(!['orange','blue','neutral'].includes(d.signal)||!Number.isFinite(Number(d.close)))throw Error('資料格式錯誤');document.getElementById('card').classList.add(d.signal);document.getElementById('rate').textContent=Number(d.close).toFixed(2);document.getElementById('status').textContent=d.signal==='orange'?'台幣偏弱｜注意持股風險':d.signal==='blue'?'台幣偏強':'中性｜持續觀察';document.getElementById('date').textContent='最新資料日期：'+d.date;}catch(e){document.getElementById('status').textContent='資料尚未就緒';document.getElementById('date').textContent='請先執行 GitHub Actions 更新資料';}})();
+window.chartData={};
+(async()=>{try{const response=await fetch('market_data.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('尚未取得匯率資料');const d=await response.json();window.chartData.fx=d;if(!['orange','blue','neutral'].includes(d.signal)||!Number.isFinite(Number(d.close)))throw Error('資料格式錯誤');document.getElementById('card').classList.add(d.signal);document.getElementById('rate').textContent=Number(d.close).toFixed(2);document.getElementById('status').textContent=d.signal==='orange'?'台幣偏弱｜注意持股風險':d.signal==='blue'?'台幣偏強':'中性｜持續觀察';document.getElementById('date').textContent='最新資料日期：'+d.date;}catch(e){document.getElementById('status').textContent='資料尚未就緒';document.getElementById('date').textContent='請先執行 GitHub Actions 更新資料';}})();
 (async()=>{
  const targets=[['foreign_investor','外資及陸資（不含外資自營商）'],['investment_trust','投信'],['dealer_self','自營商（自行買賣）']];
  const host=document.getElementById('institution-rows');
@@ -59,6 +79,7 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
   const response=await fetch('institutional_data.json?v='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('無法取得三大法人資料');
   const payload=await response.json();
+  window.chartData.institution=payload;
   if(!Array.isArray(payload.data)||!payload.data.length)throw Error('資料為空');
   const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)).sort((a,b)=>a.date.localeCompare(b.date));
   if(!records.length)throw Error('沒有有效交易日');
@@ -96,6 +117,7 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
   const response=await fetch('futures_data.json?v='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('無法取得期貨資料');
   const payload=await response.json();
+  window.chartData.futures=payload;
   if(!Array.isArray(payload.data)||payload.data.length===0)throw Error('期貨資料為空');
   const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&Number.isFinite(Number(r.net_tx_equivalent))).sort((a,b)=>a.date.localeCompare(b.date));
   if(!records.length)throw Error('無有效期貨資料');
@@ -121,6 +143,7 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
   const response=await fetch('large_traders_data.json?v='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('無法取得前十大交易人資料');
   const payload=await response.json();
+  window.chartData.large=payload;
   if(payload.futures_id!=='TX'||payload.contract_type!=='all')throw Error('商品或契約範圍不符');
   if(!Array.isArray(payload.data)||!payload.data.length)throw Error('資料為空');
   const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&Number.isFinite(Number(r.buy_top10))&&Number.isFinite(Number(r.sell_top10))&&Number.isFinite(Number(r.net))&&Number(r.buy_top10)-Number(r.sell_top10)===Number(r.net)).sort((a,b)=>a.date.localeCompare(b.date));
@@ -138,5 +161,75 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
   document.getElementById('large-traders-detail').textContent=`TX · 多方 ${Number(latest.buy_top10).toLocaleString('zh-TW')} 口／空方 ${Number(latest.sell_top10).toLocaleString('zh-TW')} 口 · 所有到期月份合計`;
   document.getElementById('large-traders-date').textContent='最新資料日期：'+latest.date;
  }catch(error){status.textContent='前十大交易人資料尚未就緒';document.getElementById('large-traders-date').textContent=error.message;}
+})();
+
+// Responsive SVG charts. Each tap selects the nearest daily observation.
+(function(){
+ const configs={
+  fx:{unit:'',series:[{name:'USD/TWD',color:'#66b5ff',read:r=>Number(r.close??r.rate??r.usdtwd??r.value)}]},
+  institution:{unit:' 億',series:[
+   {name:'外資',color:'#68b4ff',read:r=>Number(r.foreign_investor?.net_buy_100m)},
+   {name:'投信',color:'#ffc66b',read:r=>Number(r.investment_trust?.net_buy_100m)},
+   {name:'自營商',color:'#87d5ae',read:r=>Number(r.dealer_self?.net_buy_100m)}]},
+  futures:{unit:' 口',series:[{name:'外資淨部位',color:'#66b5ff',read:r=>Number(r.net_tx_equivalent)}]},
+  large:{unit:' 口',series:[{name:'前十大淨部位',color:'#66b5ff',read:r=>Number(r.net)}]}
+ };
+ const ns='http://www.w3.org/2000/svg';
+ function el(tag,attrs={},value){const node=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,v);if(value!==undefined)node.textContent=value;return node;}
+ const fmt=(n,dec=0)=>Number(n).toLocaleString('zh-TW',{maximumFractionDigits:dec});
+ function rowsFor(key,payload){
+  if(key==='fx'){
+   const raw=Array.isArray(payload)?payload:Array.isArray(payload?.data)?payload.data:Array.isArray(payload?.history)?payload.history:Array.isArray(payload?.prices)?payload.prices:Array.isArray(payload?.historical)?payload.historical:[];
+   return raw;
+  }
+  return Array.isArray(payload?.data)?payload.data:[];
+ }
+ function draw(key){
+  const panel=document.getElementById('chart-'+key),host=panel.querySelector('.chart-canvas'),tip=panel.querySelector('.chart-tooltip'),legend=panel.querySelector('.chart-legend');
+  host.replaceChildren();legend.replaceChildren();tip.textContent='';
+  const config=configs[key],payload=window.chartData[key];
+  if(!payload){host.textContent='資料尚未載入，請稍後再試。';return;}
+  const rows=rowsFor(key,payload).filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&config.series.every(z=>Number.isFinite(z.read(r)))).sort((a,b)=>a.date.localeCompare(b.date)).slice(-20);
+  if(rows.length<2){host.textContent=key==='fx'?'目前匯率 JSON 尚未提供每日歷史資料，需先補入歷史匯率才能顯示折線圖。':'有效歷史資料不足，暫時無法顯示走勢圖。';return;}
+  const W=600,H=250,L=65,R=16,T=14,B=38,iw=W-L-R,ih=H-T-B;
+  const vals=rows.flatMap(r=>config.series.map(z=>z.read(r)));
+  let min=Math.min(...vals),max=Math.max(...vals);if(key!=='fx'){min=Math.min(min,0);max=Math.max(max,0)}
+  let pad=(max-min)*.1||Math.max(Math.abs(max)*.05,1);min-=pad;max+=pad;
+  const x=i=>L+(rows.length===1?0:i*iw/(rows.length-1));
+  const y=v=>T+(max-v)*ih/(max-min);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'最近20個交易日折線圖，可點選圖表查看日期與數值'});
+  for(let i=0;i<=4;i++){
+   const v=min+(max-min)*i/4,yy=y(v);
+   svg.append(el('line',{x1:L,y1:yy,x2:W-R,y2:yy,stroke:'#40516a','stroke-width':1,'stroke-dasharray':v===0?'5 4':'2 5'}));
+   svg.append(el('text',{x:L-8,y:yy+4,'text-anchor':'end',fill:'#aebed2','font-size':12},fmt(v,key==='fx'?2:0)));
+  }
+  for(const i of [...new Set([0,Math.floor((rows.length-1)/2),rows.length-1])]){
+   svg.append(el('text',{x:x(i),y:H-10,'text-anchor':i===0?'start':i===rows.length-1?'end':'middle',fill:'#aebed2','font-size':12},rows[i].date.slice(5)));
+  }
+  for(const z of config.series){
+   const points=rows.map((r,i)=>`${x(i)},${y(z.read(r))}`).join(' ');
+   svg.append(el('polyline',{points,fill:'none',stroke:z.color,'stroke-width':3,'stroke-linejoin':'round','stroke-linecap':'round'}));
+   const item=document.createElement('span');item.textContent=z.name;item.style.setProperty('--series-color',z.color);legend.append(item);
+  }
+  const cursor=el('line',{x1:0,y1:T,x2:0,y2:T+ih,stroke:'#fff','stroke-width':1,'stroke-dasharray':'4 4',opacity:.7});svg.append(cursor);
+  const dots=config.series.map(z=>{const dot=el('circle',{r:5,fill:z.color,stroke:'#142033','stroke-width':2});svg.append(dot);return dot;});
+  function select(i){i=Math.max(0,Math.min(rows.length-1,i));cursor.setAttribute('x1',x(i));cursor.setAttribute('x2',x(i));
+   config.series.forEach((z,j)=>{dots[j].setAttribute('cx',x(i));dots[j].setAttribute('cy',y(z.read(rows[i])))});
+   tip.textContent=rows[i].date+'　'+config.series.map(z=>z.name+' '+(z.read(rows[i])>0?'+':'')+fmt(z.read(rows[i]),key==='fx'?4:2)+config.unit).join('　｜　');
+  }
+  // Transparent hit targets work with taps without preventing vertical page scrolling.
+  rows.forEach((r,i)=>{const left=i===0?L:x(i)-(iw/(rows.length-1))/2,right=i===rows.length-1?W-R:x(i)+(iw/(rows.length-1))/2;
+   const hit=el('rect',{x:left,y:T,width:right-left,height:ih,fill:'transparent',role:'button',tabindex:'0','aria-label':r.date});
+   hit.addEventListener('click',()=>select(i));hit.addEventListener('pointermove',e=>{if(e.pointerType==='mouse')select(i)});
+   hit.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(i)}});svg.append(hit);
+  });
+  host.append(svg);select(rows.length-1);
+ }
+ document.querySelectorAll('.chart-toggle').forEach(button=>{
+  button.addEventListener('click',()=>{
+   const key=button.dataset.chart,panel=document.getElementById('chart-'+key),open=button.getAttribute('aria-expanded')==='true';
+   button.setAttribute('aria-expanded',String(!open));panel.hidden=open;if(!open)draw(key);
+  });
+ });
 })();
 </script></body></html>
