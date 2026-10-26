@@ -37,6 +37,10 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 .chart-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 13px;font-size:12px;color:#c5d4e6}
 .chart-legend span::before{content:'●';color:var(--series-color);margin-right:5px}
 @media(max-width:390px){body{padding:14px 10px}.card{padding:24px 14px}.institutional{padding:24px 14px}.futures,.large-traders{padding:25px 12px}.chart-panel{padding:12px 4px}}
+
+/* 外資大額賣超：獨立於原有三日燈號的手機友善警示 */
+.foreign-alert{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;margin-top:7px;padding:11px 12px;border:1px solid #a73c4a;border-radius:10px;background:#44202b;color:#ffe4e7;font-size:14px;font-weight:650;line-height:1.55;overflow-wrap:anywhere}
+.foreign-alert svg{width:21px;height:21px;min-width:21px;margin-top:1px;fill:none;stroke:#ff6678;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
@@ -105,7 +109,25 @@ window.chartData={};
    const stateBox=document.createElement('div');stateBox.className='institution-state';
    const light=document.createElement('span');light.className='light';light.setAttribute('aria-hidden','true');
    const label=document.createElement('span');label.textContent=state;
-   stateBox.append(light,label);row.append(title,amount,stateBox);host.append(row);
+   stateBox.append(light,label);row.append(title,amount,stateBox);
+   // Python 預先計算警示；僅顯示與最新交易日相符的外資警示。
+   if(key==='foreign_investor'){
+    const alert=payload.foreign_sell_alert;
+    if(alert?.triggered===true && alert.date===latest.date && typeof alert.message==='string' && alert.message){
+     const notice=document.createElement('div');
+     notice.className='foreign-alert';
+     notice.setAttribute('role','status');
+     const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');
+     icon.setAttribute('viewBox','0 0 24 24');
+     icon.setAttribute('aria-hidden','true');
+     icon.innerHTML='<circle cx="12" cy="12" r="9"/><path d="M12 7.5v6"/><circle cx="12" cy="17" r=".7" fill="#ff6678" stroke="none"/>';
+     const message=document.createElement('span');
+     message.textContent=alert.message;
+     notice.append(icon,message);
+     row.append(notice);
+    }
+   }
+   host.append(row);
   }
   document.getElementById('institution-date').textContent='最新資料日期：'+latest.date;
  }catch(error){host.textContent='三大法人資料尚未就緒：'+error.message;}
