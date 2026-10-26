@@ -2,9 +2,9 @@
   "symbol": "TWD=X",
   "source": "Yahoo Finance",
   "date": "2026-10-26",
-  "updated_at_taipei": "2026-10-26 12:34:47 +0800",
-  "close": 32.562,
-  "ma20": 32.0979,
+  "updated_at_taipei": "2026-10-27 01:03:57 +0800",
+  "close": 32.565,
+  "ma20": 32.0981,
   "ma60": 31.9359,
   "signal": "orange",
   "label": "橘燈｜台幣偏弱・注意持股",
@@ -88,7 +88,7 @@
     },
     {
       "date": "2026-10-26",
-      "close": 32.562
+      "close": 32.565
     }
   ]
 }
