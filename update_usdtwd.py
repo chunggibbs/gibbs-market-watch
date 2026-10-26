@@ -10,13 +10,16 @@ TZ = timezone(timedelta(hours=8))
 URL = 'https://query1.finance.yahoo.com/v8/finance/chart/TWD=X?range=1y&interval=1d'
 
 def main():
-    req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0 GibbsMarketWatch/1.0', 'Accept': 'application/json'})
+    req = urllib.request.Request(URL, headers={
+        'User-Agent': 'Mozilla/5.0 GibbsMarketWatch/1.0',
+        'Accept': 'application/json',
+    })
     with urllib.request.urlopen(req, timeout=30) as resp:
         payload = json.load(resp)
     result = payload['chart']['result'][0]
     stamps = result['timestamp']
     closes = result['indicators']['quote'][0]['close']
-    # Exchange-rate daily close is based on the source's timestamps; preserve its date.
+    # Preserve the original date conversion and signal calculation.
     by_day = {}
     for ts, value in zip(stamps, closes):
         if value is not None and value > 0:
@@ -49,8 +52,12 @@ def main():
         'signal': signal,
         'label': label,
         'definition': '20MA and 60MA are simple averages of 20 and 60 valid daily closes.',
+        # Used by the existing V2 index.html interactive 20-day line chart.
+        'data': [{'date': day, 'close': round(value, 4)} for day, value in rows[-20:]],
     }
-    (ROOT / 'market_data.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (ROOT / 'market_data.json').write_text(
+        json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
+    )
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
 if __name__ == '__main__':
