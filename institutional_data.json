@@ -2,16 +2,16 @@
   "source": "FinMind",
   "dataset": "TaiwanStockTotalInstitutionalInvestors",
   "unit": "TWD 100 million (億元)",
-  "updated_at_taipei": "2026-10-30T00:17:55+08:00",
+  "updated_at_taipei": "2026-10-31T00:06:40+08:00",
   "foreign_sell_alert": {
     "type": "foreign_sell_over_threshold",
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "triggered": true,
     "threshold_100m": -150.0,
-    "actual_100m": -688.1528,
+    "actual_100m": -1124.6725,
     "severity": "warning",
     "icon": "exclamation-circle",
-    "message": "外資單日賣超 688.15 億元，超過 150 億元警戒值"
+    "message": "外資單日賣超 1,124.67 億元，超過 150 億元警戒值"
   },
   "data": [
     {
@@ -1804,6 +1804,34 @@
         "severity": "warning",
         "icon": "exclamation-circle",
         "message": "外資單日賣超 688.15 億元，超過 150 億元警戒值"
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "foreign_investor": {
+        "buy_100m": 3404.7812,
+        "sell_100m": 4529.4537,
+        "net_buy_100m": -1124.6725
+      },
+      "investment_trust": {
+        "buy_100m": 363.3643,
+        "sell_100m": 127.1763,
+        "net_buy_100m": 236.188
+      },
+      "dealer_self": {
+        "buy_100m": 90.3143,
+        "sell_100m": 128.7179,
+        "net_buy_100m": -38.4036
+      },
+      "foreign_sell_alert": {
+        "type": "foreign_sell_over_threshold",
+        "date": "2026-10-30",
+        "triggered": true,
+        "threshold_100m": -150.0,
+        "actual_100m": -1124.6725,
+        "severity": "warning",
+        "icon": "exclamation-circle",
+        "message": "外資單日賣超 1,124.67 億元，超過 150 億元警戒值"
       }
     }
   ]
