@@ -41,6 +41,14 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 /* 外資大額賣超：獨立於原有三日燈號的手機友善警示 */
 .foreign-alert{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;margin-top:7px;padding:11px 12px;border:1px solid #a73c4a;border-radius:10px;background:#44202b;color:#ffe4e7;font-size:14px;font-weight:650;line-height:1.55;overflow-wrap:anywhere}
 .foreign-alert svg{width:21px;height:21px;min-width:21px;margin-top:1px;fill:none;stroke:#ff6678;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 台股融資餘額 */
+.margin-card{margin-top:22px;padding:32px 24px}
+.margin-value{font-size:clamp(35px,8vw,55px);font-weight:750;font-variant-numeric:tabular-nums}
+.margin-change{font-size:19px;font-weight:700;margin-top:12px}
+.margin-change.positive{color:#ffb15b}
+.margin-change.negative{color:#7fbaff}
+.margin-detail{color:#b7c8de;font-size:14px;margin-top:10px}
+@media(max-width:390px){.margin-card{padding:25px 12px}}
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
@@ -72,6 +80,15 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 <div class="chart-panel" id="chart-large" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
 <div class="institution-date" id="large-traders-date">最新資料日期：—</div>
 <div class="note">資料來源：FinMind · 週一至週五台灣時間19:00排程更新<br>淨部位＝多方未沖銷－空方未沖銷；燈號僅供市場觀察。</div>
+</section>
+<section class="card margin-card" id="margin-card" aria-labelledby="margin-title">
+<button class="chart-toggle" type="button" id="margin-title" data-chart="margin" aria-expanded="false" aria-controls="chart-margin">台股融資餘額 <span class="chevron" aria-hidden="true">⌄</span></button>
+<div class="margin-value" id="margin-value">—</div>
+<div class="margin-change" id="margin-change">讀取資料中…</div>
+<div class="margin-detail" id="margin-previous">前一交易日融資餘額：—</div>
+<div class="chart-panel" id="chart-margin" hidden><p class="chart-heading">最近 20 個交易日融資餘額</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
+<div class="institution-date" id="margin-date">最新資料日期：—</div>
+<div class="note">資料來源：FinMind · 週一至週五台灣時間21:00排程更新<br>單位：新台幣億元；每日增減＝今日餘額－昨日餘額。</div>
 </section></main>
 <script>
 window.chartData={};
@@ -185,6 +202,38 @@ window.chartData={};
  }catch(error){status.textContent='前十大交易人資料尚未就緒';document.getElementById('large-traders-date').textContent=error.message;}
 })();
 
+// Taiwan market-wide margin financing balance.
+(async()=>{
+ const valueEl=document.getElementById('margin-value');
+ const changeEl=document.getElementById('margin-change');
+ const prevEl=document.getElementById('margin-previous');
+ const dateEl=document.getElementById('margin-date');
+ const fmt=n=>n.toLocaleString('zh-TW',{minimumFractionDigits:2,maximumFractionDigits:2});
+ try{
+  const response=await fetch('margin_data.json?v='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('無法取得融資資料');
+  const payload=await response.json();
+  if(!Array.isArray(payload.data))throw Error('融資資料格式錯誤');
+  const rows=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&
+   [r.today_balance,r.yesterday_balance,r.daily_change].every(v=>v!==null&&v!==''&&Number.isFinite(Number(v))))
+   .sort((a,b)=>a.date.localeCompare(b.date));
+  if(!rows.length)throw Error('沒有有效融資資料');
+  window.chartData.margin={data:rows};
+  const latest=rows[rows.length-1];
+  const balance=Number(latest.today_balance);
+  const previous=Number(latest.yesterday_balance);
+  const change=Number(latest.daily_change);
+  valueEl.textContent=fmt(balance)+' 億元';
+  prevEl.textContent='前一交易日融資餘額：'+fmt(previous)+' 億元';
+  changeEl.textContent='每日增減：'+(change>0?'+':'')+fmt(change)+' 億元';
+  changeEl.classList.add(change>0?'positive':change<0?'negative':'neutral');
+  dateEl.textContent='最新資料日期：'+latest.date;
+ }catch(error){
+  changeEl.textContent='融資資料尚未就緒';
+  dateEl.textContent=error.message;
+ }
+})();
+
 // Responsive SVG charts. Each tap selects the nearest daily observation.
 (function(){
  const configs={
@@ -194,7 +243,8 @@ window.chartData={};
    {name:'投信',color:'#ffc66b',read:r=>Number(r.investment_trust?.net_buy_100m)},
    {name:'自營商',color:'#87d5ae',read:r=>Number(r.dealer_self?.net_buy_100m)}]},
   futures:{unit:' 口',series:[{name:'外資淨部位',color:'#66b5ff',read:r=>Number(r.net_tx_equivalent)}]},
-  large:{unit:' 口',series:[{name:'前十大淨部位',color:'#66b5ff',read:r=>Number(r.net)}]}
+  large:{unit:' 口',series:[{name:'前十大淨部位',color:'#66b5ff',read:r=>Number(r.net)}]},
+  margin:{unit:' 億',series:[{name:'融資餘額',color:'#66b5ff',read:r=>Number(r.today_balance)}]}
  };
  const ns='http://www.w3.org/2000/svg';
  function el(tag,attrs={},value){const node=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,v);if(value!==undefined)node.textContent=value;return node;}
@@ -215,7 +265,7 @@ window.chartData={};
   if(rows.length<2){host.textContent=key==='fx'?'目前匯率 JSON 尚未提供每日歷史資料，需先補入歷史匯率才能顯示折線圖。':'有效歷史資料不足，暫時無法顯示走勢圖。';return;}
   const W=600,H=250,L=65,R=16,T=14,B=38,iw=W-L-R,ih=H-T-B;
   const vals=rows.flatMap(r=>config.series.map(z=>z.read(r)));
-  let min=Math.min(...vals),max=Math.max(...vals);if(key!=='fx'){min=Math.min(min,0);max=Math.max(max,0)}
+  let min=Math.min(...vals),max=Math.max(...vals);if(key!=='fx'&&key!=='margin'){min=Math.min(min,0);max=Math.max(max,0)}
   let pad=(max-min)*.1||Math.max(Math.abs(max)*.05,1);min-=pad;max+=pad;
   const x=i=>L+(rows.length===1?0:i*iw/(rows.length-1));
   const y=v=>T+(max-v)*ih/(max-min);
