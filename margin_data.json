@@ -1,0 +1,2913 @@
+{
+  "source": "FinMind",
+  "dataset": "TaiwanStockTotalMarginPurchaseShortSale",
+  "name": "MarginPurchaseMoney",
+  "unit": "TWD 100 million (億元)",
+  "updated_at_taipei": "2026-11-01T10:10:01+08:00",
+  "data": [
+    {
+      "date": "2024-11-01",
+      "today_balance": 3258.33,
+      "yesterday_balance": 3258.49,
+      "daily_change": -0.15
+    },
+    {
+      "date": "2024-11-04",
+      "today_balance": 3268.32,
+      "yesterday_balance": 3258.35,
+      "daily_change": 9.97
+    },
+    {
+      "date": "2024-11-05",
+      "today_balance": 3265.65,
+      "yesterday_balance": 3268.32,
+      "daily_change": -2.67
+    },
+    {
+      "date": "2024-11-06",
+      "today_balance": 3272.05,
+      "yesterday_balance": 3265.65,
+      "daily_change": 6.41
+    },
+    {
+      "date": "2024-11-07",
+      "today_balance": 3299.14,
+      "yesterday_balance": 3272.05,
+      "daily_change": 27.09
+    },
+    {
+      "date": "2024-11-08",
+      "today_balance": 3286.78,
+      "yesterday_balance": 3299.14,
+      "daily_change": -12.37
+    },
+    {
+      "date": "2024-11-11",
+      "today_balance": 3288.51,
+      "yesterday_balance": 3286.77,
+      "daily_change": 1.73
+    },
+    {
+      "date": "2024-11-12",
+      "today_balance": 3265.34,
+      "yesterday_balance": 3288.51,
+      "daily_change": -23.17
+    },
+    {
+      "date": "2024-11-13",
+      "today_balance": 3277.72,
+      "yesterday_balance": 3265.34,
+      "daily_change": 12.39
+    },
+    {
+      "date": "2024-11-14",
+      "today_balance": 3260.46,
+      "yesterday_balance": 3277.72,
+      "daily_change": -17.27
+    },
+    {
+      "date": "2024-11-15",
+      "today_balance": 3260.52,
+      "yesterday_balance": 3260.45,
+      "daily_change": 0.06
+    },
+    {
+      "date": "2024-11-18",
+      "today_balance": 3219.3,
+      "yesterday_balance": 3260.52,
+      "daily_change": -41.22
+    },
+    {
+      "date": "2024-11-19",
+      "today_balance": 3228.22,
+      "yesterday_balance": 3219.3,
+      "daily_change": 8.92
+    },
+    {
+      "date": "2024-11-20",
+      "today_balance": 3227.08,
+      "yesterday_balance": 3228.22,
+      "daily_change": -1.14
+    },
+    {
+      "date": "2024-11-21",
+      "today_balance": 3243.88,
+      "yesterday_balance": 3227.07,
+      "daily_change": 16.8
+    },
+    {
+      "date": "2024-11-22",
+      "today_balance": 3250.26,
+      "yesterday_balance": 3243.88,
+      "daily_change": 6.38
+    },
+    {
+      "date": "2024-11-25",
+      "today_balance": 3267.38,
+      "yesterday_balance": 3250.26,
+      "daily_change": 17.12
+    },
+    {
+      "date": "2024-11-26",
+      "today_balance": 3271.07,
+      "yesterday_balance": 3267.38,
+      "daily_change": 3.7
+    },
+    {
+      "date": "2024-11-27",
+      "today_balance": 3247.84,
+      "yesterday_balance": 3271.07,
+      "daily_change": -23.24
+    },
+    {
+      "date": "2024-11-28",
+      "today_balance": 3201.73,
+      "yesterday_balance": 3247.84,
+      "daily_change": -46.11
+    },
+    {
+      "date": "2024-11-29",
+      "today_balance": 3225.3,
+      "yesterday_balance": 3201.73,
+      "daily_change": 23.58
+    },
+    {
+      "date": "2024-12-02",
+      "today_balance": 3236.02,
+      "yesterday_balance": 3225.3,
+      "daily_change": 10.71
+    },
+    {
+      "date": "2024-12-03",
+      "today_balance": 3241.54,
+      "yesterday_balance": 3236.01,
+      "daily_change": 5.52
+    },
+    {
+      "date": "2024-12-04",
+      "today_balance": 3254.45,
+      "yesterday_balance": 3241.54,
+      "daily_change": 12.92
+    },
+    {
+      "date": "2024-12-05",
+      "today_balance": 3280.96,
+      "yesterday_balance": 3254.45,
+      "daily_change": 26.5
+    },
+    {
+      "date": "2024-12-06",
+      "today_balance": 3285.58,
+      "yesterday_balance": 3280.96,
+      "daily_change": 4.62
+    },
+    {
+      "date": "2024-12-09",
+      "today_balance": 3301.73,
+      "yesterday_balance": 3285.58,
+      "daily_change": 16.15
+    },
+    {
+      "date": "2024-12-10",
+      "today_balance": 3280.48,
+      "yesterday_balance": 3301.73,
+      "daily_change": -21.24
+    },
+    {
+      "date": "2024-12-11",
+      "today_balance": 3277.6,
+      "yesterday_balance": 3280.48,
+      "daily_change": -2.88
+    },
+    {
+      "date": "2024-12-12",
+      "today_balance": 3277.07,
+      "yesterday_balance": 3277.6,
+      "daily_change": -0.53
+    },
+    {
+      "date": "2024-12-13",
+      "today_balance": 3241.64,
+      "yesterday_balance": 3277.07,
+      "daily_change": -35.43
+    },
+    {
+      "date": "2024-12-16",
+      "today_balance": 3202.05,
+      "yesterday_balance": 3241.64,
+      "daily_change": -39.6
+    },
+    {
+      "date": "2024-12-17",
+      "today_balance": 3208.85,
+      "yesterday_balance": 3202.05,
+      "daily_change": 6.81
+    },
+    {
+      "date": "2024-12-18",
+      "today_balance": 3227.05,
+      "yesterday_balance": 3208.87,
+      "daily_change": 18.18
+    },
+    {
+      "date": "2024-12-19",
+      "today_balance": 3236.17,
+      "yesterday_balance": 3227.05,
+      "daily_change": 9.13
+    },
+    {
+      "date": "2024-12-20",
+      "today_balance": 3246.7,
+      "yesterday_balance": 3236.17,
+      "daily_change": 10.53
+    },
+    {
+      "date": "2024-12-23",
+      "today_balance": 3233.58,
+      "yesterday_balance": 3246.7,
+      "daily_change": -13.12
+    },
+    {
+      "date": "2024-12-24",
+      "today_balance": 3232.31,
+      "yesterday_balance": 3233.58,
+      "daily_change": -1.28
+    },
+    {
+      "date": "2024-12-25",
+      "today_balance": 3248.09,
+      "yesterday_balance": 3232.31,
+      "daily_change": 15.78
+    },
+    {
+      "date": "2024-12-26",
+      "today_balance": 3263.29,
+      "yesterday_balance": 3248.09,
+      "daily_change": 15.19
+    },
+    {
+      "date": "2024-12-27",
+      "today_balance": 3254.77,
+      "yesterday_balance": 3263.29,
+      "daily_change": -8.51
+    },
+    {
+      "date": "2024-12-30",
+      "today_balance": 3264.41,
+      "yesterday_balance": 3254.77,
+      "daily_change": 9.64
+    },
+    {
+      "date": "2024-12-31",
+      "today_balance": 3275.58,
+      "yesterday_balance": 3264.41,
+      "daily_change": 11.17
+    },
+    {
+      "date": "2025-01-02",
+      "today_balance": 3295.44,
+      "yesterday_balance": 3275.75,
+      "daily_change": 19.69
+    },
+    {
+      "date": "2025-01-03",
+      "today_balance": 3278.7,
+      "yesterday_balance": 3295.44,
+      "daily_change": -16.74
+    },
+    {
+      "date": "2025-01-06",
+      "today_balance": 3297.47,
+      "yesterday_balance": 3278.7,
+      "daily_change": 18.77
+    },
+    {
+      "date": "2025-01-07",
+      "today_balance": 3291.73,
+      "yesterday_balance": 3297.47,
+      "daily_change": -5.74
+    },
+    {
+      "date": "2025-01-08",
+      "today_balance": 3301.3,
+      "yesterday_balance": 3291.73,
+      "daily_change": 9.56
+    },
+    {
+      "date": "2025-01-09",
+      "today_balance": 3256.44,
+      "yesterday_balance": 3301.3,
+      "daily_change": -44.86
+    },
+    {
+      "date": "2025-01-10",
+      "today_balance": 3230.66,
+      "yesterday_balance": 3256.44,
+      "daily_change": -25.77
+    },
+    {
+      "date": "2025-01-13",
+      "today_balance": 3155.35,
+      "yesterday_balance": 3230.66,
+      "daily_change": -75.31
+    },
+    {
+      "date": "2025-01-14",
+      "today_balance": 3149.59,
+      "yesterday_balance": 3155.35,
+      "daily_change": -5.76
+    },
+    {
+      "date": "2025-01-15",
+      "today_balance": 3147.33,
+      "yesterday_balance": 3149.59,
+      "daily_change": -2.26
+    },
+    {
+      "date": "2025-01-16",
+      "today_balance": 3124.66,
+      "yesterday_balance": 3147.33,
+      "daily_change": -22.67
+    },
+    {
+      "date": "2025-01-17",
+      "today_balance": 3097.73,
+      "yesterday_balance": 3124.66,
+      "daily_change": -26.94
+    },
+    {
+      "date": "2025-01-20",
+      "today_balance": 3090.19,
+      "yesterday_balance": 3097.73,
+      "daily_change": -7.54
+    },
+    {
+      "date": "2025-01-21",
+      "today_balance": 3077.74,
+      "yesterday_balance": 3090.19,
+      "daily_change": -12.44
+    },
+    {
+      "date": "2025-01-22",
+      "today_balance": 3052.88,
+      "yesterday_balance": 3077.74,
+      "daily_change": -24.87
+    },
+    {
+      "date": "2025-02-03",
+      "today_balance": 3051.87,
+      "yesterday_balance": 3049.9,
+      "daily_change": 1.97
+    },
+    {
+      "date": "2025-02-04",
+      "today_balance": 3057.1,
+      "yesterday_balance": 3051.87,
+      "daily_change": 5.23
+    },
+    {
+      "date": "2025-02-05",
+      "today_balance": 3056.01,
+      "yesterday_balance": 3057.1,
+      "daily_change": -1.09
+    },
+    {
+      "date": "2025-02-06",
+      "today_balance": 3059.35,
+      "yesterday_balance": 3056.01,
+      "daily_change": 3.34
+    },
+    {
+      "date": "2025-02-07",
+      "today_balance": 3060.34,
+      "yesterday_balance": 3059.35,
+      "daily_change": 1.0
+    },
+    {
+      "date": "2025-02-10",
+      "today_balance": 3087.22,
+      "yesterday_balance": 3060.34,
+      "daily_change": 26.87
+    },
+    {
+      "date": "2025-02-11",
+      "today_balance": 3091.54,
+      "yesterday_balance": 3087.22,
+      "daily_change": 4.32
+    },
+    {
+      "date": "2025-02-12",
+      "today_balance": 3115.24,
+      "yesterday_balance": 3091.54,
+      "daily_change": 23.7
+    },
+    {
+      "date": "2025-02-13",
+      "today_balance": 3130.24,
+      "yesterday_balance": 3115.24,
+      "daily_change": 15.0
+    },
+    {
+      "date": "2025-02-14",
+      "today_balance": 3135.74,
+      "yesterday_balance": 3130.24,
+      "daily_change": 5.5
+    },
+    {
+      "date": "2025-02-17",
+      "today_balance": 3149.23,
+      "yesterday_balance": 3135.74,
+      "daily_change": 13.49
+    },
+    {
+      "date": "2025-02-18",
+      "today_balance": 3163.99,
+      "yesterday_balance": 3149.23,
+      "daily_change": 14.76
+    },
+    {
+      "date": "2025-02-19",
+      "today_balance": 3192.93,
+      "yesterday_balance": 3163.99,
+      "daily_change": 28.94
+    },
+    {
+      "date": "2025-02-20",
+      "today_balance": 3213.12,
+      "yesterday_balance": 3192.93,
+      "daily_change": 20.19
+    },
+    {
+      "date": "2025-02-21",
+      "today_balance": 3217.84,
+      "yesterday_balance": 3213.12,
+      "daily_change": 4.72
+    },
+    {
+      "date": "2025-02-24",
+      "today_balance": 3234.35,
+      "yesterday_balance": 3217.84,
+      "daily_change": 16.51
+    },
+    {
+      "date": "2025-02-25",
+      "today_balance": 3244.83,
+      "yesterday_balance": 3234.35,
+      "daily_change": 10.48
+    },
+    {
+      "date": "2025-02-26",
+      "today_balance": 3254.13,
+      "yesterday_balance": 3244.83,
+      "daily_change": 9.3
+    },
+    {
+      "date": "2025-02-27",
+      "today_balance": 3242.85,
+      "yesterday_balance": 3254.13,
+      "daily_change": -11.29
+    },
+    {
+      "date": "2025-03-03",
+      "today_balance": 3240.5,
+      "yesterday_balance": 3242.84,
+      "daily_change": -2.34
+    },
+    {
+      "date": "2025-03-04",
+      "today_balance": 3261.12,
+      "yesterday_balance": 3240.5,
+      "daily_change": 20.61
+    },
+    {
+      "date": "2025-03-05",
+      "today_balance": 3280.33,
+      "yesterday_balance": 3261.12,
+      "daily_change": 19.22
+    },
+    {
+      "date": "2025-03-06",
+      "today_balance": 3286.09,
+      "yesterday_balance": 3280.33,
+      "daily_change": 5.76
+    },
+    {
+      "date": "2025-03-07",
+      "today_balance": 3278.51,
+      "yesterday_balance": 3286.09,
+      "daily_change": -7.58
+    },
+    {
+      "date": "2025-03-10",
+      "today_balance": 3272.46,
+      "yesterday_balance": 3278.51,
+      "daily_change": -6.05
+    },
+    {
+      "date": "2025-03-11",
+      "today_balance": 3258.07,
+      "yesterday_balance": 3272.46,
+      "daily_change": -14.4
+    },
+    {
+      "date": "2025-03-12",
+      "today_balance": 3276.94,
+      "yesterday_balance": 3258.07,
+      "daily_change": 18.88
+    },
+    {
+      "date": "2025-03-13",
+      "today_balance": 3264.15,
+      "yesterday_balance": 3276.94,
+      "daily_change": -12.8
+    },
+    {
+      "date": "2025-03-14",
+      "today_balance": 3256.95,
+      "yesterday_balance": 3264.15,
+      "daily_change": -7.2
+    },
+    {
+      "date": "2025-03-17",
+      "today_balance": 3253.61,
+      "yesterday_balance": 3256.95,
+      "daily_change": -3.34
+    },
+    {
+      "date": "2025-03-18",
+      "today_balance": 3246.91,
+      "yesterday_balance": 3253.61,
+      "daily_change": -6.7
+    },
+    {
+      "date": "2025-03-19",
+      "today_balance": 3242.9,
+      "yesterday_balance": 3246.91,
+      "daily_change": -4.01
+    },
+    {
+      "date": "2025-03-20",
+      "today_balance": 3242.38,
+      "yesterday_balance": 3242.9,
+      "daily_change": -0.52
+    },
+    {
+      "date": "2025-03-21",
+      "today_balance": 3241.19,
+      "yesterday_balance": 3242.38,
+      "daily_change": -1.19
+    },
+    {
+      "date": "2025-03-24",
+      "today_balance": 3237.59,
+      "yesterday_balance": 3241.19,
+      "daily_change": -3.6
+    },
+    {
+      "date": "2025-03-25",
+      "today_balance": 3222.76,
+      "yesterday_balance": 3237.59,
+      "daily_change": -14.83
+    },
+    {
+      "date": "2025-03-26",
+      "today_balance": 3218.65,
+      "yesterday_balance": 3222.76,
+      "daily_change": -4.1
+    },
+    {
+      "date": "2025-03-27",
+      "today_balance": 3211.22,
+      "yesterday_balance": 3218.65,
+      "daily_change": -7.44
+    },
+    {
+      "date": "2025-03-28",
+      "today_balance": 3160.23,
+      "yesterday_balance": 3211.22,
+      "daily_change": -50.99
+    },
+    {
+      "date": "2025-03-31",
+      "today_balance": 3003.14,
+      "yesterday_balance": 3160.22,
+      "daily_change": -157.08
+    },
+    {
+      "date": "2025-04-01",
+      "today_balance": 2989.58,
+      "yesterday_balance": 3003.13,
+      "daily_change": -13.55
+    },
+    {
+      "date": "2025-04-02",
+      "today_balance": 2988.17,
+      "yesterday_balance": 2989.58,
+      "daily_change": -1.41
+    },
+    {
+      "date": "2025-04-07",
+      "today_balance": 2852.53,
+      "yesterday_balance": 2988.16,
+      "daily_change": -135.63
+    },
+    {
+      "date": "2025-04-08",
+      "today_balance": 2567.89,
+      "yesterday_balance": 2852.26,
+      "daily_change": -284.37
+    },
+    {
+      "date": "2025-04-09",
+      "today_balance": 2237.85,
+      "yesterday_balance": 2567.44,
+      "daily_change": -329.59
+    },
+    {
+      "date": "2025-04-10",
+      "today_balance": 2224.32,
+      "yesterday_balance": 2237.75,
+      "daily_change": -13.43
+    },
+    {
+      "date": "2025-04-11",
+      "today_balance": 2139.56,
+      "yesterday_balance": 2224.32,
+      "daily_change": -84.76
+    },
+    {
+      "date": "2025-04-14",
+      "today_balance": 2128.04,
+      "yesterday_balance": 2139.56,
+      "daily_change": -11.52
+    },
+    {
+      "date": "2025-04-15",
+      "today_balance": 2139.95,
+      "yesterday_balance": 2128.04,
+      "daily_change": 11.91
+    },
+    {
+      "date": "2025-04-16",
+      "today_balance": 2145.5,
+      "yesterday_balance": 2139.95,
+      "daily_change": 5.55
+    },
+    {
+      "date": "2025-04-17",
+      "today_balance": 2160.2,
+      "yesterday_balance": 2145.57,
+      "daily_change": 14.63
+    },
+    {
+      "date": "2025-04-18",
+      "today_balance": 2159.79,
+      "yesterday_balance": 2160.2,
+      "daily_change": -0.41
+    },
+    {
+      "date": "2025-04-21",
+      "today_balance": 2124.87,
+      "yesterday_balance": 2159.79,
+      "daily_change": -34.93
+    },
+    {
+      "date": "2025-04-22",
+      "today_balance": 2109.32,
+      "yesterday_balance": 2124.87,
+      "daily_change": -15.55
+    },
+    {
+      "date": "2025-04-23",
+      "today_balance": 2103.93,
+      "yesterday_balance": 2109.32,
+      "daily_change": -5.39
+    },
+    {
+      "date": "2025-04-24",
+      "today_balance": 2100.94,
+      "yesterday_balance": 2103.93,
+      "daily_change": -2.99
+    },
+    {
+      "date": "2025-04-25",
+      "today_balance": 2088.45,
+      "yesterday_balance": 2100.94,
+      "daily_change": -12.49
+    },
+    {
+      "date": "2025-04-28",
+      "today_balance": 2081.54,
+      "yesterday_balance": 2088.44,
+      "daily_change": -6.9
+    },
+    {
+      "date": "2025-04-29",
+      "today_balance": 2090.09,
+      "yesterday_balance": 2081.54,
+      "daily_change": 8.55
+    },
+    {
+      "date": "2025-04-30",
+      "today_balance": 2096.7,
+      "yesterday_balance": 2090.09,
+      "daily_change": 6.61
+    },
+    {
+      "date": "2025-05-02",
+      "today_balance": 2093.51,
+      "yesterday_balance": 2096.7,
+      "daily_change": -3.18
+    },
+    {
+      "date": "2025-05-05",
+      "today_balance": 2088.67,
+      "yesterday_balance": 2093.5,
+      "daily_change": -4.83
+    },
+    {
+      "date": "2025-05-06",
+      "today_balance": 2094.83,
+      "yesterday_balance": 2088.67,
+      "daily_change": 6.15
+    },
+    {
+      "date": "2025-05-07",
+      "today_balance": 2094.4,
+      "yesterday_balance": 2094.83,
+      "daily_change": -0.43
+    },
+    {
+      "date": "2025-05-08",
+      "today_balance": 2095.67,
+      "yesterday_balance": 2094.4,
+      "daily_change": 1.28
+    },
+    {
+      "date": "2025-05-09",
+      "today_balance": 2098.18,
+      "yesterday_balance": 2095.67,
+      "daily_change": 2.5
+    },
+    {
+      "date": "2025-05-12",
+      "today_balance": 2101.12,
+      "yesterday_balance": 2098.18,
+      "daily_change": 2.94
+    },
+    {
+      "date": "2025-05-13",
+      "today_balance": 2105.08,
+      "yesterday_balance": 2101.12,
+      "daily_change": 3.96
+    },
+    {
+      "date": "2025-05-14",
+      "today_balance": 2120.12,
+      "yesterday_balance": 2105.08,
+      "daily_change": 15.03
+    },
+    {
+      "date": "2025-05-15",
+      "today_balance": 2133.12,
+      "yesterday_balance": 2120.12,
+      "daily_change": 13.01
+    },
+    {
+      "date": "2025-05-16",
+      "today_balance": 2164.11,
+      "yesterday_balance": 2133.12,
+      "daily_change": 30.98
+    },
+    {
+      "date": "2025-05-19",
+      "today_balance": 2165.36,
+      "yesterday_balance": 2164.11,
+      "daily_change": 1.25
+    },
+    {
+      "date": "2025-05-20",
+      "today_balance": 2174.35,
+      "yesterday_balance": 2165.36,
+      "daily_change": 9.0
+    },
+    {
+      "date": "2025-05-21",
+      "today_balance": 2178.56,
+      "yesterday_balance": 2174.35,
+      "daily_change": 4.21
+    },
+    {
+      "date": "2025-05-22",
+      "today_balance": 2200.45,
+      "yesterday_balance": 2178.56,
+      "daily_change": 21.89
+    },
+    {
+      "date": "2025-05-23",
+      "today_balance": 2195.46,
+      "yesterday_balance": 2200.45,
+      "daily_change": -4.99
+    },
+    {
+      "date": "2025-05-26",
+      "today_balance": 2206.58,
+      "yesterday_balance": 2195.46,
+      "daily_change": 11.11
+    },
+    {
+      "date": "2025-05-27",
+      "today_balance": 2206.0,
+      "yesterday_balance": 2206.58,
+      "daily_change": -0.58
+    },
+    {
+      "date": "2025-05-28",
+      "today_balance": 2202.46,
+      "yesterday_balance": 2206.0,
+      "daily_change": -3.53
+    },
+    {
+      "date": "2025-05-29",
+      "today_balance": 2211.81,
+      "yesterday_balance": 2202.46,
+      "daily_change": 9.35
+    },
+    {
+      "date": "2025-06-02",
+      "today_balance": 2215.29,
+      "yesterday_balance": 2211.81,
+      "daily_change": 3.47
+    },
+    {
+      "date": "2025-06-03",
+      "today_balance": 2218.58,
+      "yesterday_balance": 2215.29,
+      "daily_change": 3.29
+    },
+    {
+      "date": "2025-06-04",
+      "today_balance": 2229.51,
+      "yesterday_balance": 2218.58,
+      "daily_change": 10.93
+    },
+    {
+      "date": "2025-06-05",
+      "today_balance": 2224.32,
+      "yesterday_balance": 2229.51,
+      "daily_change": -5.19
+    },
+    {
+      "date": "2025-06-06",
+      "today_balance": 2223.53,
+      "yesterday_balance": 2224.32,
+      "daily_change": -0.79
+    },
+    {
+      "date": "2025-06-09",
+      "today_balance": 2224.14,
+      "yesterday_balance": 2223.53,
+      "daily_change": 0.61
+    },
+    {
+      "date": "2025-06-10",
+      "today_balance": 2206.28,
+      "yesterday_balance": 2224.14,
+      "daily_change": -17.86
+    },
+    {
+      "date": "2025-06-11",
+      "today_balance": 2221.86,
+      "yesterday_balance": 2206.28,
+      "daily_change": 15.58
+    },
+    {
+      "date": "2025-06-12",
+      "today_balance": 2236.81,
+      "yesterday_balance": 2221.86,
+      "daily_change": 14.95
+    },
+    {
+      "date": "2025-06-13",
+      "today_balance": 2233.09,
+      "yesterday_balance": 2236.81,
+      "daily_change": -3.71
+    },
+    {
+      "date": "2025-06-16",
+      "today_balance": 2244.18,
+      "yesterday_balance": 2233.1,
+      "daily_change": 11.08
+    },
+    {
+      "date": "2025-06-17",
+      "today_balance": 2242.88,
+      "yesterday_balance": 2244.18,
+      "daily_change": -1.3
+    },
+    {
+      "date": "2025-06-18",
+      "today_balance": 2247.54,
+      "yesterday_balance": 2242.88,
+      "daily_change": 4.66
+    },
+    {
+      "date": "2025-06-19",
+      "today_balance": 2250.36,
+      "yesterday_balance": 2247.54,
+      "daily_change": 2.83
+    },
+    {
+      "date": "2025-06-20",
+      "today_balance": 2241.23,
+      "yesterday_balance": 2250.36,
+      "daily_change": -9.13
+    },
+    {
+      "date": "2025-06-23",
+      "today_balance": 2244.38,
+      "yesterday_balance": 2241.23,
+      "daily_change": 3.14
+    },
+    {
+      "date": "2025-06-24",
+      "today_balance": 2243.18,
+      "yesterday_balance": 2244.38,
+      "daily_change": -1.19
+    },
+    {
+      "date": "2025-06-25",
+      "today_balance": 2241.9,
+      "yesterday_balance": 2243.18,
+      "daily_change": -1.29
+    },
+    {
+      "date": "2025-06-26",
+      "today_balance": 2247.19,
+      "yesterday_balance": 2241.9,
+      "daily_change": 5.29
+    },
+    {
+      "date": "2025-06-27",
+      "today_balance": 2252.28,
+      "yesterday_balance": 2247.2,
+      "daily_change": 5.09
+    },
+    {
+      "date": "2025-06-30",
+      "today_balance": 2262.93,
+      "yesterday_balance": 2252.28,
+      "daily_change": 10.64
+    },
+    {
+      "date": "2025-07-01",
+      "today_balance": 2251.61,
+      "yesterday_balance": 2262.93,
+      "daily_change": -11.31
+    },
+    {
+      "date": "2025-07-02",
+      "today_balance": 2253.16,
+      "yesterday_balance": 2251.61,
+      "daily_change": 1.55
+    },
+    {
+      "date": "2025-07-03",
+      "today_balance": 2258.41,
+      "yesterday_balance": 2253.16,
+      "daily_change": 5.25
+    },
+    {
+      "date": "2025-07-04",
+      "today_balance": 2237.51,
+      "yesterday_balance": 2258.41,
+      "daily_change": -20.9
+    },
+    {
+      "date": "2025-07-07",
+      "today_balance": 2215.54,
+      "yesterday_balance": 2237.51,
+      "daily_change": -21.97
+    },
+    {
+      "date": "2025-07-08",
+      "today_balance": 2220.9,
+      "yesterday_balance": 2215.54,
+      "daily_change": 5.36
+    },
+    {
+      "date": "2025-07-09",
+      "today_balance": 2226.18,
+      "yesterday_balance": 2220.9,
+      "daily_change": 5.28
+    },
+    {
+      "date": "2025-07-10",
+      "today_balance": 2241.96,
+      "yesterday_balance": 2226.18,
+      "daily_change": 15.78
+    },
+    {
+      "date": "2025-07-11",
+      "today_balance": 2240.59,
+      "yesterday_balance": 2241.96,
+      "daily_change": -1.38
+    },
+    {
+      "date": "2025-07-14",
+      "today_balance": 2244.38,
+      "yesterday_balance": 2240.59,
+      "daily_change": 3.79
+    },
+    {
+      "date": "2025-07-15",
+      "today_balance": 2267.23,
+      "yesterday_balance": 2244.38,
+      "daily_change": 22.85
+    },
+    {
+      "date": "2025-07-16",
+      "today_balance": 2268.73,
+      "yesterday_balance": 2267.23,
+      "daily_change": 1.5
+    },
+    {
+      "date": "2025-07-17",
+      "today_balance": 2279.81,
+      "yesterday_balance": 2268.73,
+      "daily_change": 11.09
+    },
+    {
+      "date": "2025-07-18",
+      "today_balance": 2281.11,
+      "yesterday_balance": 2279.81,
+      "daily_change": 1.3
+    },
+    {
+      "date": "2025-07-21",
+      "today_balance": 2294.77,
+      "yesterday_balance": 2282.22,
+      "daily_change": 12.55
+    },
+    {
+      "date": "2025-07-22",
+      "today_balance": 2245.54,
+      "yesterday_balance": 2294.61,
+      "daily_change": -49.07
+    },
+    {
+      "date": "2025-07-23",
+      "today_balance": 2279.84,
+      "yesterday_balance": 2245.54,
+      "daily_change": 34.3
+    },
+    {
+      "date": "2025-07-24",
+      "today_balance": 2292.27,
+      "yesterday_balance": 2279.83,
+      "daily_change": 12.44
+    },
+    {
+      "date": "2025-07-25",
+      "today_balance": 2295.81,
+      "yesterday_balance": 2292.27,
+      "daily_change": 3.54
+    },
+    {
+      "date": "2025-07-28",
+      "today_balance": 2300.49,
+      "yesterday_balance": 2295.81,
+      "daily_change": 4.68
+    },
+    {
+      "date": "2025-07-29",
+      "today_balance": 2295.21,
+      "yesterday_balance": 2300.49,
+      "daily_change": -5.28
+    },
+    {
+      "date": "2025-07-30",
+      "today_balance": 2297.82,
+      "yesterday_balance": 2295.21,
+      "daily_change": 2.61
+    },
+    {
+      "date": "2025-07-31",
+      "today_balance": 2313.15,
+      "yesterday_balance": 2297.82,
+      "daily_change": 15.33
+    },
+    {
+      "date": "2025-08-01",
+      "today_balance": 2325.88,
+      "yesterday_balance": 2313.15,
+      "daily_change": 12.73
+    },
+    {
+      "date": "2025-08-04",
+      "today_balance": 2334.1,
+      "yesterday_balance": 2325.88,
+      "daily_change": 8.22
+    },
+    {
+      "date": "2025-08-05",
+      "today_balance": 2353.87,
+      "yesterday_balance": 2334.1,
+      "daily_change": 19.76
+    },
+    {
+      "date": "2025-08-06",
+      "today_balance": 2360.36,
+      "yesterday_balance": 2353.87,
+      "daily_change": 6.49
+    },
+    {
+      "date": "2025-08-07",
+      "today_balance": 2375.15,
+      "yesterday_balance": 2360.37,
+      "daily_change": 14.78
+    },
+    {
+      "date": "2025-08-08",
+      "today_balance": 2386.14,
+      "yesterday_balance": 2375.14,
+      "daily_change": 11.0
+    },
+    {
+      "date": "2025-08-11",
+      "today_balance": 2425.1,
+      "yesterday_balance": 2386.17,
+      "daily_change": 38.93
+    },
+    {
+      "date": "2025-08-12",
+      "today_balance": 2432.66,
+      "yesterday_balance": 2425.1,
+      "daily_change": 7.57
+    },
+    {
+      "date": "2025-08-13",
+      "today_balance": 2423.84,
+      "yesterday_balance": 2432.66,
+      "daily_change": -8.82
+    },
+    {
+      "date": "2025-08-14",
+      "today_balance": 2450.37,
+      "yesterday_balance": 2423.82,
+      "daily_change": 26.55
+    },
+    {
+      "date": "2025-08-15",
+      "today_balance": 2483.24,
+      "yesterday_balance": 2450.39,
+      "daily_change": 32.84
+    },
+    {
+      "date": "2025-08-18",
+      "today_balance": 2498.93,
+      "yesterday_balance": 2483.24,
+      "daily_change": 15.69
+    },
+    {
+      "date": "2025-08-19",
+      "today_balance": 2501.96,
+      "yesterday_balance": 2498.93,
+      "daily_change": 3.03
+    },
+    {
+      "date": "2025-08-20",
+      "today_balance": 2489.39,
+      "yesterday_balance": 2501.96,
+      "daily_change": -12.58
+    },
+    {
+      "date": "2025-08-21",
+      "today_balance": 2517.06,
+      "yesterday_balance": 2489.39,
+      "daily_change": 27.68
+    },
+    {
+      "date": "2025-08-22",
+      "today_balance": 2515.45,
+      "yesterday_balance": 2517.06,
+      "daily_change": -1.62
+    },
+    {
+      "date": "2025-08-25",
+      "today_balance": 2539.34,
+      "yesterday_balance": 2515.45,
+      "daily_change": 23.89
+    },
+    {
+      "date": "2025-08-26",
+      "today_balance": 2552.61,
+      "yesterday_balance": 2539.34,
+      "daily_change": 13.27
+    },
+    {
+      "date": "2025-08-27",
+      "today_balance": 2583.06,
+      "yesterday_balance": 2552.61,
+      "daily_change": 30.45
+    },
+    {
+      "date": "2025-08-28",
+      "today_balance": 2602.32,
+      "yesterday_balance": 2583.06,
+      "daily_change": 19.26
+    },
+    {
+      "date": "2025-08-29",
+      "today_balance": 2623.27,
+      "yesterday_balance": 2602.32,
+      "daily_change": 20.95
+    },
+    {
+      "date": "2025-09-01",
+      "today_balance": 2591.47,
+      "yesterday_balance": 2623.27,
+      "daily_change": -31.8
+    },
+    {
+      "date": "2025-09-02",
+      "today_balance": 2590.13,
+      "yesterday_balance": 2591.47,
+      "daily_change": -1.34
+    },
+    {
+      "date": "2025-09-03",
+      "today_balance": 2610.33,
+      "yesterday_balance": 2590.13,
+      "daily_change": 20.2
+    },
+    {
+      "date": "2025-09-04",
+      "today_balance": 2615.42,
+      "yesterday_balance": 2610.33,
+      "daily_change": 5.09
+    },
+    {
+      "date": "2025-09-05",
+      "today_balance": 2644.82,
+      "yesterday_balance": 2615.42,
+      "daily_change": 29.4
+    },
+    {
+      "date": "2025-09-08",
+      "today_balance": 2665.1,
+      "yesterday_balance": 2645.02,
+      "daily_change": 20.08
+    },
+    {
+      "date": "2025-09-09",
+      "today_balance": 2675.37,
+      "yesterday_balance": 2665.1,
+      "daily_change": 10.27
+    },
+    {
+      "date": "2025-09-10",
+      "today_balance": 2699.63,
+      "yesterday_balance": 2675.36,
+      "daily_change": 24.27
+    },
+    {
+      "date": "2025-09-11",
+      "today_balance": 2658.55,
+      "yesterday_balance": 2699.63,
+      "daily_change": -41.08
+    },
+    {
+      "date": "2025-09-12",
+      "today_balance": 2656.15,
+      "yesterday_balance": 2658.55,
+      "daily_change": -2.4
+    },
+    {
+      "date": "2025-09-15",
+      "today_balance": 2642.11,
+      "yesterday_balance": 2656.15,
+      "daily_change": -14.04
+    },
+    {
+      "date": "2025-09-16",
+      "today_balance": 2658.57,
+      "yesterday_balance": 2642.11,
+      "daily_change": 16.46
+    },
+    {
+      "date": "2025-09-17",
+      "today_balance": 2648.69,
+      "yesterday_balance": 2658.57,
+      "daily_change": -9.87
+    },
+    {
+      "date": "2025-09-18",
+      "today_balance": 2668.09,
+      "yesterday_balance": 2648.69,
+      "daily_change": 19.39
+    },
+    {
+      "date": "2025-09-19",
+      "today_balance": 2688.35,
+      "yesterday_balance": 2668.09,
+      "daily_change": 20.26
+    },
+    {
+      "date": "2025-09-22",
+      "today_balance": 2724.58,
+      "yesterday_balance": 2688.35,
+      "daily_change": 36.24
+    },
+    {
+      "date": "2025-09-23",
+      "today_balance": 2728.01,
+      "yesterday_balance": 2724.58,
+      "daily_change": 3.43
+    },
+    {
+      "date": "2025-09-24",
+      "today_balance": 2746.51,
+      "yesterday_balance": 2728.01,
+      "daily_change": 18.49
+    },
+    {
+      "date": "2025-09-25",
+      "today_balance": 2752.65,
+      "yesterday_balance": 2746.51,
+      "daily_change": 6.14
+    },
+    {
+      "date": "2025-09-26",
+      "today_balance": 2715.47,
+      "yesterday_balance": 2752.65,
+      "daily_change": -37.18
+    },
+    {
+      "date": "2025-09-30",
+      "today_balance": 2754.3,
+      "yesterday_balance": 2715.47,
+      "daily_change": 38.82
+    },
+    {
+      "date": "2025-10-01",
+      "today_balance": 2762.37,
+      "yesterday_balance": 2754.29,
+      "daily_change": 8.08
+    },
+    {
+      "date": "2025-10-02",
+      "today_balance": 2789.85,
+      "yesterday_balance": 2762.37,
+      "daily_change": 27.48
+    },
+    {
+      "date": "2025-10-03",
+      "today_balance": 2818.8,
+      "yesterday_balance": 2789.85,
+      "daily_change": 28.95
+    },
+    {
+      "date": "2025-10-07",
+      "today_balance": 2832.26,
+      "yesterday_balance": 2818.8,
+      "daily_change": 13.47
+    },
+    {
+      "date": "2025-10-08",
+      "today_balance": 2835.89,
+      "yesterday_balance": 2832.26,
+      "daily_change": 3.63
+    },
+    {
+      "date": "2025-10-09",
+      "today_balance": 2856.13,
+      "yesterday_balance": 2835.89,
+      "daily_change": 20.23
+    },
+    {
+      "date": "2025-10-13",
+      "today_balance": 2831.67,
+      "yesterday_balance": 2856.13,
+      "daily_change": -24.46
+    },
+    {
+      "date": "2025-10-14",
+      "today_balance": 2753.45,
+      "yesterday_balance": 2831.67,
+      "daily_change": -78.22
+    },
+    {
+      "date": "2025-10-15",
+      "today_balance": 2802.51,
+      "yesterday_balance": 2753.45,
+      "daily_change": 49.06
+    },
+    {
+      "date": "2025-10-16",
+      "today_balance": 2852.8,
+      "yesterday_balance": 2802.51,
+      "daily_change": 50.29
+    },
+    {
+      "date": "2025-10-17",
+      "today_balance": 2851.99,
+      "yesterday_balance": 2852.8,
+      "daily_change": -0.82
+    },
+    {
+      "date": "2025-10-20",
+      "today_balance": 2895.24,
+      "yesterday_balance": 2851.99,
+      "daily_change": 43.26
+    },
+    {
+      "date": "2025-10-21",
+      "today_balance": 2909.84,
+      "yesterday_balance": 2895.24,
+      "daily_change": 14.6
+    },
+    {
+      "date": "2025-10-22",
+      "today_balance": 2928.85,
+      "yesterday_balance": 2909.84,
+      "daily_change": 19.01
+    },
+    {
+      "date": "2025-10-23",
+      "today_balance": 2925.89,
+      "yesterday_balance": 2928.85,
+      "daily_change": -2.97
+    },
+    {
+      "date": "2025-10-27",
+      "today_balance": 2959.84,
+      "yesterday_balance": 2925.89,
+      "daily_change": 33.95
+    },
+    {
+      "date": "2025-10-28",
+      "today_balance": 2963.73,
+      "yesterday_balance": 2959.84,
+      "daily_change": 3.89
+    },
+    {
+      "date": "2025-10-29",
+      "today_balance": 3005.89,
+      "yesterday_balance": 2963.73,
+      "daily_change": 42.16
+    },
+    {
+      "date": "2025-10-30",
+      "today_balance": 2983.92,
+      "yesterday_balance": 3005.89,
+      "daily_change": -21.97
+    },
+    {
+      "date": "2025-10-31",
+      "today_balance": 3017.51,
+      "yesterday_balance": 2983.92,
+      "daily_change": 33.59
+    },
+    {
+      "date": "2025-11-03",
+      "today_balance": 3043.36,
+      "yesterday_balance": 3017.51,
+      "daily_change": 25.85
+    },
+    {
+      "date": "2025-11-04",
+      "today_balance": 3003.18,
+      "yesterday_balance": 3043.36,
+      "daily_change": -40.18
+    },
+    {
+      "date": "2025-11-05",
+      "today_balance": 3028.86,
+      "yesterday_balance": 3003.18,
+      "daily_change": 25.68
+    },
+    {
+      "date": "2025-11-06",
+      "today_balance": 3079.08,
+      "yesterday_balance": 3028.86,
+      "daily_change": 50.22
+    },
+    {
+      "date": "2025-11-07",
+      "today_balance": 3077.61,
+      "yesterday_balance": 3079.09,
+      "daily_change": -1.48
+    },
+    {
+      "date": "2025-11-10",
+      "today_balance": 3101.29,
+      "yesterday_balance": 3077.61,
+      "daily_change": 23.68
+    },
+    {
+      "date": "2025-11-11",
+      "today_balance": 3098.15,
+      "yesterday_balance": 3101.28,
+      "daily_change": -3.13
+    },
+    {
+      "date": "2025-11-12",
+      "today_balance": 3129.53,
+      "yesterday_balance": 3098.15,
+      "daily_change": 31.37
+    },
+    {
+      "date": "2025-11-13",
+      "today_balance": 3139.5,
+      "yesterday_balance": 3129.53,
+      "daily_change": 9.98
+    },
+    {
+      "date": "2025-11-14",
+      "today_balance": 3110.08,
+      "yesterday_balance": 3139.5,
+      "daily_change": -29.42
+    },
+    {
+      "date": "2025-11-17",
+      "today_balance": 3110.9,
+      "yesterday_balance": 3110.08,
+      "daily_change": 0.82
+    },
+    {
+      "date": "2025-11-18",
+      "today_balance": 3063.29,
+      "yesterday_balance": 3110.9,
+      "daily_change": -47.62
+    },
+    {
+      "date": "2025-11-19",
+      "today_balance": 3062.05,
+      "yesterday_balance": 3063.29,
+      "daily_change": -1.24
+    },
+    {
+      "date": "2025-11-20",
+      "today_balance": 3096.65,
+      "yesterday_balance": 3062.05,
+      "daily_change": 34.61
+    },
+    {
+      "date": "2025-11-21",
+      "today_balance": 3037.08,
+      "yesterday_balance": 3096.65,
+      "daily_change": -59.58
+    },
+    {
+      "date": "2025-11-24",
+      "today_balance": 3063.8,
+      "yesterday_balance": 3037.08,
+      "daily_change": 26.73
+    },
+    {
+      "date": "2025-11-25",
+      "today_balance": 3113.69,
+      "yesterday_balance": 3063.8,
+      "daily_change": 49.89
+    },
+    {
+      "date": "2025-11-26",
+      "today_balance": 3110.61,
+      "yesterday_balance": 3113.69,
+      "daily_change": -3.08
+    },
+    {
+      "date": "2025-11-27",
+      "today_balance": 3140.06,
+      "yesterday_balance": 3110.6,
+      "daily_change": 29.46
+    },
+    {
+      "date": "2025-11-28",
+      "today_balance": 3171.82,
+      "yesterday_balance": 3140.06,
+      "daily_change": 31.76
+    },
+    {
+      "date": "2025-12-01",
+      "today_balance": 3193.6,
+      "yesterday_balance": 3171.82,
+      "daily_change": 21.78
+    },
+    {
+      "date": "2025-12-02",
+      "today_balance": 3197.37,
+      "yesterday_balance": 3193.6,
+      "daily_change": 3.77
+    },
+    {
+      "date": "2025-12-03",
+      "today_balance": 3214.25,
+      "yesterday_balance": 3197.37,
+      "daily_change": 16.88
+    },
+    {
+      "date": "2025-12-04",
+      "today_balance": 3228.26,
+      "yesterday_balance": 3214.25,
+      "daily_change": 14.01
+    },
+    {
+      "date": "2025-12-05",
+      "today_balance": 3229.17,
+      "yesterday_balance": 3228.26,
+      "daily_change": 0.9
+    },
+    {
+      "date": "2025-12-08",
+      "today_balance": 3247.39,
+      "yesterday_balance": 3229.17,
+      "daily_change": 18.23
+    },
+    {
+      "date": "2025-12-09",
+      "today_balance": 3268.84,
+      "yesterday_balance": 3247.39,
+      "daily_change": 21.45
+    },
+    {
+      "date": "2025-12-10",
+      "today_balance": 3276.95,
+      "yesterday_balance": 3268.84,
+      "daily_change": 8.1
+    },
+    {
+      "date": "2025-12-11",
+      "today_balance": 3266.72,
+      "yesterday_balance": 3276.95,
+      "daily_change": -10.23
+    },
+    {
+      "date": "2025-12-12",
+      "today_balance": 3293.5,
+      "yesterday_balance": 3266.72,
+      "daily_change": 26.78
+    },
+    {
+      "date": "2025-12-15",
+      "today_balance": 3318.59,
+      "yesterday_balance": 3293.5,
+      "daily_change": 25.1
+    },
+    {
+      "date": "2025-12-16",
+      "today_balance": 3287.89,
+      "yesterday_balance": 3318.59,
+      "daily_change": -30.7
+    },
+    {
+      "date": "2025-12-17",
+      "today_balance": 3321.75,
+      "yesterday_balance": 3287.89,
+      "daily_change": 33.85
+    },
+    {
+      "date": "2025-12-18",
+      "today_balance": 3323.8,
+      "yesterday_balance": 3321.75,
+      "daily_change": 2.05
+    },
+    {
+      "date": "2025-12-19",
+      "today_balance": 3333.09,
+      "yesterday_balance": 3323.8,
+      "daily_change": 9.29
+    },
+    {
+      "date": "2025-12-22",
+      "today_balance": 3351.96,
+      "yesterday_balance": 3333.09,
+      "daily_change": 18.87
+    },
+    {
+      "date": "2025-12-23",
+      "today_balance": 3375.88,
+      "yesterday_balance": 3351.96,
+      "daily_change": 23.92
+    },
+    {
+      "date": "2025-12-24",
+      "today_balance": 3389.03,
+      "yesterday_balance": 3375.88,
+      "daily_change": 13.14
+    },
+    {
+      "date": "2025-12-26",
+      "today_balance": 3403.37,
+      "yesterday_balance": 3389.03,
+      "daily_change": 14.34
+    },
+    {
+      "date": "2025-12-29",
+      "today_balance": 3398.87,
+      "yesterday_balance": 3403.37,
+      "daily_change": -4.5
+    },
+    {
+      "date": "2025-12-30",
+      "today_balance": 3413.68,
+      "yesterday_balance": 3398.87,
+      "daily_change": 14.81
+    },
+    {
+      "date": "2025-12-31",
+      "today_balance": 3434.1,
+      "yesterday_balance": 3413.68,
+      "daily_change": 20.42
+    },
+    {
+      "date": "2026-01-02",
+      "today_balance": 3466.34,
+      "yesterday_balance": 3434.1,
+      "daily_change": 32.25
+    },
+    {
+      "date": "2026-01-05",
+      "today_balance": 3509.48,
+      "yesterday_balance": 3466.33,
+      "daily_change": 43.15
+    },
+    {
+      "date": "2026-01-06",
+      "today_balance": 3545.49,
+      "yesterday_balance": 3509.48,
+      "daily_change": 36.01
+    },
+    {
+      "date": "2026-01-07",
+      "today_balance": 3570.59,
+      "yesterday_balance": 3545.5,
+      "daily_change": 25.08
+    },
+    {
+      "date": "2026-01-08",
+      "today_balance": 3523.88,
+      "yesterday_balance": 3570.59,
+      "daily_change": -46.71
+    },
+    {
+      "date": "2026-01-09",
+      "today_balance": 3514.93,
+      "yesterday_balance": 3523.88,
+      "daily_change": -8.95
+    },
+    {
+      "date": "2026-01-12",
+      "today_balance": 3564.9,
+      "yesterday_balance": 3514.93,
+      "daily_change": 49.97
+    },
+    {
+      "date": "2026-01-13",
+      "today_balance": 3556.39,
+      "yesterday_balance": 3564.9,
+      "daily_change": -8.51
+    },
+    {
+      "date": "2026-01-14",
+      "today_balance": 3584.53,
+      "yesterday_balance": 3556.39,
+      "daily_change": 28.14
+    },
+    {
+      "date": "2026-01-15",
+      "today_balance": 3592.99,
+      "yesterday_balance": 3584.53,
+      "daily_change": 8.46
+    },
+    {
+      "date": "2026-01-16",
+      "today_balance": 3633.92,
+      "yesterday_balance": 3592.99,
+      "daily_change": 40.93
+    },
+    {
+      "date": "2026-01-19",
+      "today_balance": 3694.16,
+      "yesterday_balance": 3633.92,
+      "daily_change": 60.24
+    },
+    {
+      "date": "2026-01-20",
+      "today_balance": 3712.26,
+      "yesterday_balance": 3694.16,
+      "daily_change": 18.1
+    },
+    {
+      "date": "2026-01-21",
+      "today_balance": 3677.5,
+      "yesterday_balance": 3712.26,
+      "daily_change": -34.76
+    },
+    {
+      "date": "2026-01-22",
+      "today_balance": 3717.34,
+      "yesterday_balance": 3677.45,
+      "daily_change": 39.89
+    },
+    {
+      "date": "2026-01-23",
+      "today_balance": 3760.77,
+      "yesterday_balance": 3717.34,
+      "daily_change": 43.43
+    },
+    {
+      "date": "2026-01-26",
+      "today_balance": 3815.81,
+      "yesterday_balance": 3760.77,
+      "daily_change": 55.04
+    },
+    {
+      "date": "2026-01-27",
+      "today_balance": 3827.28,
+      "yesterday_balance": 3815.81,
+      "daily_change": 11.47
+    },
+    {
+      "date": "2026-01-28",
+      "today_balance": 3849.2,
+      "yesterday_balance": 3827.28,
+      "daily_change": 21.92
+    },
+    {
+      "date": "2026-01-29",
+      "today_balance": 3817.78,
+      "yesterday_balance": 3849.2,
+      "daily_change": -31.42
+    },
+    {
+      "date": "2026-01-30",
+      "today_balance": 3838.93,
+      "yesterday_balance": 3817.78,
+      "daily_change": 21.15
+    },
+    {
+      "date": "2026-02-02",
+      "today_balance": 3788.48,
+      "yesterday_balance": 3838.93,
+      "daily_change": -50.45
+    },
+    {
+      "date": "2026-02-03",
+      "today_balance": 3821.25,
+      "yesterday_balance": 3788.48,
+      "daily_change": 32.77
+    },
+    {
+      "date": "2026-02-04",
+      "today_balance": 3840.46,
+      "yesterday_balance": 3821.25,
+      "daily_change": 19.21
+    },
+    {
+      "date": "2026-02-05",
+      "today_balance": 3829.18,
+      "yesterday_balance": 3840.46,
+      "daily_change": -11.28
+    },
+    {
+      "date": "2026-02-06",
+      "today_balance": 3739.91,
+      "yesterday_balance": 3829.18,
+      "daily_change": -89.27
+    },
+    {
+      "date": "2026-02-09",
+      "today_balance": 3754.7,
+      "yesterday_balance": 3739.91,
+      "daily_change": 14.79
+    },
+    {
+      "date": "2026-02-10",
+      "today_balance": 3725.86,
+      "yesterday_balance": 3754.7,
+      "daily_change": -28.84
+    },
+    {
+      "date": "2026-02-11",
+      "today_balance": 3680.47,
+      "yesterday_balance": 3725.86,
+      "daily_change": -45.4
+    },
+    {
+      "date": "2026-02-23",
+      "today_balance": 3721.56,
+      "yesterday_balance": 3674.98,
+      "daily_change": 46.58
+    },
+    {
+      "date": "2026-02-24",
+      "today_balance": 3774.95,
+      "yesterday_balance": 3721.56,
+      "daily_change": 53.39
+    },
+    {
+      "date": "2026-02-25",
+      "today_balance": 3831.27,
+      "yesterday_balance": 3774.95,
+      "daily_change": 56.32
+    },
+    {
+      "date": "2026-02-26",
+      "today_balance": 3898.61,
+      "yesterday_balance": 3831.27,
+      "daily_change": 67.34
+    },
+    {
+      "date": "2026-03-02",
+      "today_balance": 3916.23,
+      "yesterday_balance": 3898.61,
+      "daily_change": 17.62
+    },
+    {
+      "date": "2026-03-03",
+      "today_balance": 3843.58,
+      "yesterday_balance": 3915.23,
+      "daily_change": -71.65
+    },
+    {
+      "date": "2026-03-04",
+      "today_balance": 3766.16,
+      "yesterday_balance": 3843.58,
+      "daily_change": -77.42
+    },
+    {
+      "date": "2026-03-05",
+      "today_balance": 3791.67,
+      "yesterday_balance": 3766.16,
+      "daily_change": 25.5
+    },
+    {
+      "date": "2026-03-06",
+      "today_balance": 3826.84,
+      "yesterday_balance": 3791.67,
+      "daily_change": 35.17
+    },
+    {
+      "date": "2026-03-09",
+      "today_balance": 3719.6,
+      "yesterday_balance": 3826.84,
+      "daily_change": -107.23
+    },
+    {
+      "date": "2026-03-10",
+      "today_balance": 3682.36,
+      "yesterday_balance": 3719.6,
+      "daily_change": -37.24
+    },
+    {
+      "date": "2026-03-11",
+      "today_balance": 3761.48,
+      "yesterday_balance": 3682.36,
+      "daily_change": 79.12
+    },
+    {
+      "date": "2026-03-12",
+      "today_balance": 3793.67,
+      "yesterday_balance": 3761.48,
+      "daily_change": 32.19
+    },
+    {
+      "date": "2026-03-13",
+      "today_balance": 3854.47,
+      "yesterday_balance": 3793.67,
+      "daily_change": 60.8
+    },
+    {
+      "date": "2026-03-16",
+      "today_balance": 3922.84,
+      "yesterday_balance": 3854.47,
+      "daily_change": 68.37
+    },
+    {
+      "date": "2026-03-17",
+      "today_balance": 3934.67,
+      "yesterday_balance": 3922.84,
+      "daily_change": 11.83
+    },
+    {
+      "date": "2026-03-18",
+      "today_balance": 3997.72,
+      "yesterday_balance": 3934.67,
+      "daily_change": 63.05
+    },
+    {
+      "date": "2026-03-19",
+      "today_balance": 4020.96,
+      "yesterday_balance": 3997.72,
+      "daily_change": 23.24
+    },
+    {
+      "date": "2026-03-20",
+      "today_balance": 3985.91,
+      "yesterday_balance": 4020.96,
+      "daily_change": -35.05
+    },
+    {
+      "date": "2026-03-23",
+      "today_balance": 3933.34,
+      "yesterday_balance": 3985.91,
+      "daily_change": -52.57
+    },
+    {
+      "date": "2026-03-24",
+      "today_balance": 3901.03,
+      "yesterday_balance": 3933.34,
+      "daily_change": -32.31
+    },
+    {
+      "date": "2026-03-25",
+      "today_balance": 3954.99,
+      "yesterday_balance": 3901.03,
+      "daily_change": 53.96
+    },
+    {
+      "date": "2026-03-26",
+      "today_balance": 3911.37,
+      "yesterday_balance": 3954.99,
+      "daily_change": -43.62
+    },
+    {
+      "date": "2026-03-27",
+      "today_balance": 3937.23,
+      "yesterday_balance": 3911.36,
+      "daily_change": 25.86
+    },
+    {
+      "date": "2026-03-30",
+      "today_balance": 3927.09,
+      "yesterday_balance": 3937.23,
+      "daily_change": -10.14
+    },
+    {
+      "date": "2026-03-31",
+      "today_balance": 3817.25,
+      "yesterday_balance": 3927.09,
+      "daily_change": -109.84
+    },
+    {
+      "date": "2026-04-01",
+      "today_balance": 3849.08,
+      "yesterday_balance": 3817.25,
+      "daily_change": 31.83
+    },
+    {
+      "date": "2026-04-02",
+      "today_balance": 3852.01,
+      "yesterday_balance": 3859.08,
+      "daily_change": -7.07
+    },
+    {
+      "date": "2026-04-07",
+      "today_balance": 3877.35,
+      "yesterday_balance": 3842.01,
+      "daily_change": 35.34
+    },
+    {
+      "date": "2026-04-08",
+      "today_balance": 3948.21,
+      "yesterday_balance": 3877.34,
+      "daily_change": 70.86
+    },
+    {
+      "date": "2026-04-09",
+      "today_balance": 3965.18,
+      "yesterday_balance": 3953.34,
+      "daily_change": 11.84
+    },
+    {
+      "date": "2026-04-10",
+      "today_balance": 4012.41,
+      "yesterday_balance": 3965.18,
+      "daily_change": 47.23
+    },
+    {
+      "date": "2026-04-13",
+      "today_balance": 4086.51,
+      "yesterday_balance": 4012.41,
+      "daily_change": 74.11
+    },
+    {
+      "date": "2026-04-14",
+      "today_balance": 4149.55,
+      "yesterday_balance": 4086.51,
+      "daily_change": 63.04
+    },
+    {
+      "date": "2026-04-15",
+      "today_balance": 4162.54,
+      "yesterday_balance": 4149.88,
+      "daily_change": 12.66
+    },
+    {
+      "date": "2026-04-16",
+      "today_balance": 4224.09,
+      "yesterday_balance": 4162.54,
+      "daily_change": 61.55
+    },
+    {
+      "date": "2026-04-17",
+      "today_balance": 4271.2,
+      "yesterday_balance": 4224.09,
+      "daily_change": 47.12
+    },
+    {
+      "date": "2026-04-20",
+      "today_balance": 4298.31,
+      "yesterday_balance": 4271.21,
+      "daily_change": 27.1
+    },
+    {
+      "date": "2026-04-21",
+      "today_balance": 4331.64,
+      "yesterday_balance": 4298.3,
+      "daily_change": 33.34
+    },
+    {
+      "date": "2026-04-22",
+      "today_balance": 4385.45,
+      "yesterday_balance": 4331.64,
+      "daily_change": 53.81
+    },
+    {
+      "date": "2026-04-23",
+      "today_balance": 4308.27,
+      "yesterday_balance": 4385.45,
+      "daily_change": -77.18
+    },
+    {
+      "date": "2026-04-24",
+      "today_balance": 4409.07,
+      "yesterday_balance": 4308.26,
+      "daily_change": 100.81
+    },
+    {
+      "date": "2026-04-27",
+      "today_balance": 4520.44,
+      "yesterday_balance": 4409.07,
+      "daily_change": 111.37
+    },
+    {
+      "date": "2026-04-28",
+      "today_balance": 4571.1,
+      "yesterday_balance": 4520.44,
+      "daily_change": 50.65
+    },
+    {
+      "date": "2026-04-29",
+      "today_balance": 4609.64,
+      "yesterday_balance": 4571.13,
+      "daily_change": 38.51
+    },
+    {
+      "date": "2026-04-30",
+      "today_balance": 4609.05,
+      "yesterday_balance": 4609.75,
+      "daily_change": -0.7
+    },
+    {
+      "date": "2026-05-04",
+      "today_balance": 4703.94,
+      "yesterday_balance": 4609.06,
+      "daily_change": 94.88
+    },
+    {
+      "date": "2026-05-05",
+      "today_balance": 4751.45,
+      "yesterday_balance": 4703.9,
+      "daily_change": 47.56
+    },
+    {
+      "date": "2026-05-06",
+      "today_balance": 4756.48,
+      "yesterday_balance": 4751.45,
+      "daily_change": 5.03
+    },
+    {
+      "date": "2026-05-07",
+      "today_balance": 4826.64,
+      "yesterday_balance": 4756.48,
+      "daily_change": 70.16
+    },
+    {
+      "date": "2026-05-08",
+      "today_balance": 4771.85,
+      "yesterday_balance": 4826.64,
+      "daily_change": -54.79
+    },
+    {
+      "date": "2026-05-11",
+      "today_balance": 4845.93,
+      "yesterday_balance": 4771.85,
+      "daily_change": 74.08
+    },
+    {
+      "date": "2026-05-12",
+      "today_balance": 4911.95,
+      "yesterday_balance": 4845.93,
+      "daily_change": 66.02
+    },
+    {
+      "date": "2026-05-13",
+      "today_balance": 4944.18,
+      "yesterday_balance": 4911.95,
+      "daily_change": 32.23
+    },
+    {
+      "date": "2026-05-14",
+      "today_balance": 4991.35,
+      "yesterday_balance": 4944.18,
+      "daily_change": 47.17
+    },
+    {
+      "date": "2026-05-15",
+      "today_balance": 4927.97,
+      "yesterday_balance": 4991.35,
+      "daily_change": -63.38
+    },
+    {
+      "date": "2026-05-18",
+      "today_balance": 5016.2,
+      "yesterday_balance": 4927.97,
+      "daily_change": 88.22
+    },
+    {
+      "date": "2026-05-19",
+      "today_balance": 4968.87,
+      "yesterday_balance": 5016.2,
+      "daily_change": -47.33
+    },
+    {
+      "date": "2026-05-20",
+      "today_balance": 5020.79,
+      "yesterday_balance": 4968.87,
+      "daily_change": 51.92
+    },
+    {
+      "date": "2026-05-21",
+      "today_balance": 5111.54,
+      "yesterday_balance": 5020.79,
+      "daily_change": 90.75
+    },
+    {
+      "date": "2026-05-22",
+      "today_balance": 5222.89,
+      "yesterday_balance": 5111.54,
+      "daily_change": 111.35
+    },
+    {
+      "date": "2026-05-25",
+      "today_balance": 5304.76,
+      "yesterday_balance": 5222.9,
+      "daily_change": 81.86
+    },
+    {
+      "date": "2026-05-26",
+      "today_balance": 5345.93,
+      "yesterday_balance": 5304.76,
+      "daily_change": 41.17
+    },
+    {
+      "date": "2026-05-27",
+      "today_balance": 5362.69,
+      "yesterday_balance": 5345.93,
+      "daily_change": 16.76
+    },
+    {
+      "date": "2026-05-28",
+      "today_balance": 5350.3,
+      "yesterday_balance": 5362.69,
+      "daily_change": -12.4
+    },
+    {
+      "date": "2026-05-29",
+      "today_balance": 5563.6,
+      "yesterday_balance": 5350.26,
+      "daily_change": 213.34
+    },
+    {
+      "date": "2026-06-01",
+      "today_balance": 5657.79,
+      "yesterday_balance": 5563.6,
+      "daily_change": 94.19
+    },
+    {
+      "date": "2026-06-02",
+      "today_balance": 5669.71,
+      "yesterday_balance": 5657.79,
+      "daily_change": 11.92
+    },
+    {
+      "date": "2026-06-03",
+      "today_balance": 5683.95,
+      "yesterday_balance": 5669.69,
+      "daily_change": 14.26
+    },
+    {
+      "date": "2026-06-04",
+      "today_balance": 5726.36,
+      "yesterday_balance": 5683.95,
+      "daily_change": 42.41
+    },
+    {
+      "date": "2026-06-05",
+      "today_balance": 5666.49,
+      "yesterday_balance": 5726.35,
+      "daily_change": -59.86
+    },
+    {
+      "date": "2026-06-08",
+      "today_balance": 5510.12,
+      "yesterday_balance": 5666.49,
+      "daily_change": -156.37
+    },
+    {
+      "date": "2026-06-09",
+      "today_balance": 5638.77,
+      "yesterday_balance": 5510.12,
+      "daily_change": 128.65
+    },
+    {
+      "date": "2026-06-10",
+      "today_balance": 5468.12,
+      "yesterday_balance": 5638.77,
+      "daily_change": -170.65
+    },
+    {
+      "date": "2026-06-11",
+      "today_balance": 5491.77,
+      "yesterday_balance": 5468.12,
+      "daily_change": 23.65
+    },
+    {
+      "date": "2026-06-12",
+      "today_balance": 5570.28,
+      "yesterday_balance": 5491.77,
+      "daily_change": 78.51
+    },
+    {
+      "date": "2026-06-15",
+      "today_balance": 5719.07,
+      "yesterday_balance": 5570.28,
+      "daily_change": 148.79
+    },
+    {
+      "date": "2026-06-16",
+      "today_balance": 5713.08,
+      "yesterday_balance": 5719.05,
+      "daily_change": -5.97
+    },
+    {
+      "date": "2026-06-17",
+      "today_balance": 5839.12,
+      "yesterday_balance": 5713.08,
+      "daily_change": 126.04
+    },
+    {
+      "date": "2026-06-18",
+      "today_balance": 5930.47,
+      "yesterday_balance": 5847.6,
+      "daily_change": 82.86
+    },
+    {
+      "date": "2026-06-22",
+      "today_balance": 6050.42,
+      "yesterday_balance": 5930.46,
+      "daily_change": 119.95
+    },
+    {
+      "date": "2026-06-23",
+      "today_balance": 5939.29,
+      "yesterday_balance": 6050.42,
+      "daily_change": -111.13
+    },
+    {
+      "date": "2026-06-24",
+      "today_balance": 6074.56,
+      "yesterday_balance": 5939.3,
+      "daily_change": 135.26
+    },
+    {
+      "date": "2026-06-25",
+      "today_balance": 6110.01,
+      "yesterday_balance": 6074.56,
+      "daily_change": 35.44
+    },
+    {
+      "date": "2026-06-26",
+      "today_balance": 5909.26,
+      "yesterday_balance": 6110.01,
+      "daily_change": -200.75
+    },
+    {
+      "date": "2026-06-29",
+      "today_balance": 5942.3,
+      "yesterday_balance": 5909.27,
+      "daily_change": 33.03
+    },
+    {
+      "date": "2026-06-30",
+      "today_balance": 6116.52,
+      "yesterday_balance": 5942.3,
+      "daily_change": 174.23
+    },
+    {
+      "date": "2026-07-01",
+      "today_balance": 6095.02,
+      "yesterday_balance": 6116.52,
+      "daily_change": -21.5
+    },
+    {
+      "date": "2026-07-02",
+      "today_balance": 6208.37,
+      "yesterday_balance": 6095.02,
+      "daily_change": 113.35
+    },
+    {
+      "date": "2026-07-03",
+      "today_balance": 6308.12,
+      "yesterday_balance": 6208.37,
+      "daily_change": 99.75
+    },
+    {
+      "date": "2026-07-06",
+      "today_balance": 6313.45,
+      "yesterday_balance": 6308.17,
+      "daily_change": 5.27
+    },
+    {
+      "date": "2026-07-07",
+      "today_balance": 6109.45,
+      "yesterday_balance": 6313.45,
+      "daily_change": -204.0
+    },
+    {
+      "date": "2026-07-08",
+      "today_balance": 6138.16,
+      "yesterday_balance": 6109.45,
+      "daily_change": 28.7
+    },
+    {
+      "date": "2026-07-09",
+      "today_balance": 6196.48,
+      "yesterday_balance": 6138.16,
+      "daily_change": 58.33
+    },
+    {
+      "date": "2026-07-13",
+      "today_balance": 6182.99,
+      "yesterday_balance": 6196.48,
+      "daily_change": -13.49
+    },
+    {
+      "date": "2026-07-14",
+      "today_balance": 6040.34,
+      "yesterday_balance": 6183.0,
+      "daily_change": -142.66
+    },
+    {
+      "date": "2026-07-15",
+      "today_balance": 6153.68,
+      "yesterday_balance": 6040.34,
+      "daily_change": 113.34
+    },
+    {
+      "date": "2026-07-16",
+      "today_balance": 6155.76,
+      "yesterday_balance": 6153.89,
+      "daily_change": 1.87
+    },
+    {
+      "date": "2026-07-17",
+      "today_balance": 5879.63,
+      "yesterday_balance": 6155.76,
+      "daily_change": -276.13
+    },
+    {
+      "date": "2026-07-20",
+      "today_balance": 5690.36,
+      "yesterday_balance": 5879.63,
+      "daily_change": -189.27
+    },
+    {
+      "date": "2026-07-21",
+      "today_balance": 5764.96,
+      "yesterday_balance": 5690.35,
+      "daily_change": 74.61
+    },
+    {
+      "date": "2026-07-22",
+      "today_balance": 5828.24,
+      "yesterday_balance": 5764.96,
+      "daily_change": 63.27
+    },
+    {
+      "date": "2026-07-23",
+      "today_balance": 5826.26,
+      "yesterday_balance": 5828.24,
+      "daily_change": -1.97
+    },
+    {
+      "date": "2026-07-24",
+      "today_balance": 5770.6,
+      "yesterday_balance": 5826.26,
+      "daily_change": -55.67
+    },
+    {
+      "date": "2026-07-27",
+      "today_balance": 5686.63,
+      "yesterday_balance": 5770.59,
+      "daily_change": -83.96
+    },
+    {
+      "date": "2026-07-28",
+      "today_balance": 5455.35,
+      "yesterday_balance": 5686.63,
+      "daily_change": -231.29
+    },
+    {
+      "date": "2026-07-29",
+      "today_balance": 5070.11,
+      "yesterday_balance": 5455.34,
+      "daily_change": -385.22
+    },
+    {
+      "date": "2026-07-30",
+      "today_balance": 4938.67,
+      "yesterday_balance": 5070.1,
+      "daily_change": -131.43
+    },
+    {
+      "date": "2026-07-31",
+      "today_balance": 5074.63,
+      "yesterday_balance": 4938.66,
+      "daily_change": 135.97
+    },
+    {
+      "date": "2026-08-03",
+      "today_balance": 5147.55,
+      "yesterday_balance": 5074.63,
+      "daily_change": 72.93
+    },
+    {
+      "date": "2026-08-04",
+      "today_balance": 5211.35,
+      "yesterday_balance": 5147.55,
+      "daily_change": 63.79
+    },
+    {
+      "date": "2026-08-05",
+      "today_balance": 5234.92,
+      "yesterday_balance": 5211.35,
+      "daily_change": 23.58
+    },
+    {
+      "date": "2026-08-06",
+      "today_balance": 5328.05,
+      "yesterday_balance": 5234.92,
+      "daily_change": 93.13
+    },
+    {
+      "date": "2026-08-07",
+      "today_balance": 5376.65,
+      "yesterday_balance": 5328.05,
+      "daily_change": 48.6
+    },
+    {
+      "date": "2026-08-10",
+      "today_balance": 5452.96,
+      "yesterday_balance": 5376.65,
+      "daily_change": 76.31
+    },
+    {
+      "date": "2026-08-11",
+      "today_balance": 5441.52,
+      "yesterday_balance": 5452.96,
+      "daily_change": -11.44
+    },
+    {
+      "date": "2026-08-12",
+      "today_balance": 5480.84,
+      "yesterday_balance": 5441.52,
+      "daily_change": 39.32
+    },
+    {
+      "date": "2026-08-13",
+      "today_balance": 5497.81,
+      "yesterday_balance": 5480.84,
+      "daily_change": 16.97
+    },
+    {
+      "date": "2026-08-14",
+      "today_balance": 5470.59,
+      "yesterday_balance": 5497.81,
+      "daily_change": -27.21
+    },
+    {
+      "date": "2026-08-17",
+      "today_balance": 5501.02,
+      "yesterday_balance": 5470.59,
+      "daily_change": 30.42
+    },
+    {
+      "date": "2026-08-18",
+      "today_balance": 5470.11,
+      "yesterday_balance": 5501.02,
+      "daily_change": -30.9
+    },
+    {
+      "date": "2026-08-19",
+      "today_balance": 5481.9,
+      "yesterday_balance": 5470.12,
+      "daily_change": 11.78
+    },
+    {
+      "date": "2026-08-20",
+      "today_balance": 5484.08,
+      "yesterday_balance": 5481.9,
+      "daily_change": 2.17
+    },
+    {
+      "date": "2026-08-21",
+      "today_balance": 5469.39,
+      "yesterday_balance": 5484.08,
+      "daily_change": -14.68
+    },
+    {
+      "date": "2026-08-24",
+      "today_balance": 5452.59,
+      "yesterday_balance": 5469.39,
+      "daily_change": -16.8
+    },
+    {
+      "date": "2026-08-25",
+      "today_balance": 5469.38,
+      "yesterday_balance": 5452.6,
+      "daily_change": 16.78
+    },
+    {
+      "date": "2026-08-26",
+      "today_balance": 5548.03,
+      "yesterday_balance": 5469.38,
+      "daily_change": 78.65
+    },
+    {
+      "date": "2026-08-27",
+      "today_balance": 5599.19,
+      "yesterday_balance": 5548.03,
+      "daily_change": 51.16
+    },
+    {
+      "date": "2026-08-28",
+      "today_balance": 5671.78,
+      "yesterday_balance": 5599.19,
+      "daily_change": 72.59
+    },
+    {
+      "date": "2026-08-31",
+      "today_balance": 5698.77,
+      "yesterday_balance": 5671.78,
+      "daily_change": 26.99
+    },
+    {
+      "date": "2026-09-01",
+      "today_balance": 5781.15,
+      "yesterday_balance": 5698.77,
+      "daily_change": 82.39
+    },
+    {
+      "date": "2026-09-02",
+      "today_balance": 5856.75,
+      "yesterday_balance": 5781.15,
+      "daily_change": 75.6
+    },
+    {
+      "date": "2026-09-03",
+      "today_balance": 5787.39,
+      "yesterday_balance": 5856.75,
+      "daily_change": -69.36
+    },
+    {
+      "date": "2026-09-04",
+      "today_balance": 5818.95,
+      "yesterday_balance": 5787.39,
+      "daily_change": 31.55
+    },
+    {
+      "date": "2026-09-07",
+      "today_balance": 5882.72,
+      "yesterday_balance": 5818.95,
+      "daily_change": 63.77
+    },
+    {
+      "date": "2026-09-08",
+      "today_balance": 5862.67,
+      "yesterday_balance": 5882.72,
+      "daily_change": -20.05
+    },
+    {
+      "date": "2026-09-09",
+      "today_balance": 5871.67,
+      "yesterday_balance": 5862.67,
+      "daily_change": 9.0
+    },
+    {
+      "date": "2026-09-10",
+      "today_balance": 5918.98,
+      "yesterday_balance": 5871.67,
+      "daily_change": 47.31
+    },
+    {
+      "date": "2026-09-11",
+      "today_balance": 5878.71,
+      "yesterday_balance": 5918.98,
+      "daily_change": -40.27
+    },
+    {
+      "date": "2026-09-14",
+      "today_balance": 5838.78,
+      "yesterday_balance": 5878.71,
+      "daily_change": -39.94
+    },
+    {
+      "date": "2026-09-15",
+      "today_balance": 5822.4,
+      "yesterday_balance": 5838.78,
+      "daily_change": -16.37
+    },
+    {
+      "date": "2026-09-16",
+      "today_balance": 5861.67,
+      "yesterday_balance": 5822.4,
+      "daily_change": 39.26
+    },
+    {
+      "date": "2026-09-17",
+      "today_balance": 5893.97,
+      "yesterday_balance": 5861.69,
+      "daily_change": 32.29
+    },
+    {
+      "date": "2026-09-18",
+      "today_balance": 5940.39,
+      "yesterday_balance": 5893.97,
+      "daily_change": 46.42
+    },
+    {
+      "date": "2026-09-21",
+      "today_balance": 6030.38,
+      "yesterday_balance": 5940.39,
+      "daily_change": 89.98
+    },
+    {
+      "date": "2026-09-22",
+      "today_balance": 6048.61,
+      "yesterday_balance": 6030.38,
+      "daily_change": 18.24
+    },
+    {
+      "date": "2026-09-23",
+      "today_balance": 6063.68,
+      "yesterday_balance": 6048.61,
+      "daily_change": 15.06
+    },
+    {
+      "date": "2026-09-24",
+      "today_balance": 6151.03,
+      "yesterday_balance": 6063.68,
+      "daily_change": 87.36
+    },
+    {
+      "date": "2026-09-29",
+      "today_balance": 6186.53,
+      "yesterday_balance": 6151.03,
+      "daily_change": 35.5
+    },
+    {
+      "date": "2026-09-30",
+      "today_balance": 6222.52,
+      "yesterday_balance": 6186.53,
+      "daily_change": 35.99
+    },
+    {
+      "date": "2026-10-01",
+      "today_balance": 6298.67,
+      "yesterday_balance": 6222.97,
+      "daily_change": 75.71
+    },
+    {
+      "date": "2026-10-02",
+      "today_balance": 6351.04,
+      "yesterday_balance": 6298.67,
+      "daily_change": 52.37
+    },
+    {
+      "date": "2026-10-05",
+      "today_balance": 6333.52,
+      "yesterday_balance": 6351.04,
+      "daily_change": -17.53
+    },
+    {
+      "date": "2026-10-06",
+      "today_balance": 6376.57,
+      "yesterday_balance": 6333.52,
+      "daily_change": 43.05
+    },
+    {
+      "date": "2026-10-07",
+      "today_balance": 6400.01,
+      "yesterday_balance": 6376.57,
+      "daily_change": 23.44
+    },
+    {
+      "date": "2026-10-08",
+      "today_balance": 6464.06,
+      "yesterday_balance": 6400.01,
+      "daily_change": 64.05
+    },
+    {
+      "date": "2026-10-12",
+      "today_balance": 6533.3,
+      "yesterday_balance": 6464.06,
+      "daily_change": 69.24
+    },
+    {
+      "date": "2026-10-13",
+      "today_balance": 6449.79,
+      "yesterday_balance": 6533.3,
+      "daily_change": -83.51
+    },
+    {
+      "date": "2026-10-14",
+      "today_balance": 6515.67,
+      "yesterday_balance": 6449.79,
+      "daily_change": 65.89
+    },
+    {
+      "date": "2026-10-15",
+      "today_balance": 6464.15,
+      "yesterday_balance": 6515.56,
+      "daily_change": -51.41
+    },
+    {
+      "date": "2026-10-16",
+      "today_balance": 6455.94,
+      "yesterday_balance": 6464.16,
+      "daily_change": -8.22
+    },
+    {
+      "date": "2026-10-19",
+      "today_balance": 6406.18,
+      "yesterday_balance": 6455.94,
+      "daily_change": -49.76
+    },
+    {
+      "date": "2026-10-20",
+      "today_balance": 6381.0,
+      "yesterday_balance": 6406.18,
+      "daily_change": -25.18
+    },
+    {
+      "date": "2026-10-21",
+      "today_balance": 6443.74,
+      "yesterday_balance": 6381.0,
+      "daily_change": 62.73
+    },
+    {
+      "date": "2026-10-22",
+      "today_balance": 6338.8,
+      "yesterday_balance": 6443.74,
+      "daily_change": -104.93
+    },
+    {
+      "date": "2026-10-27",
+      "today_balance": 6233.87,
+      "yesterday_balance": 6338.8,
+      "daily_change": -104.93
+    },
+    {
+      "date": "2026-10-28",
+      "today_balance": 6323.0,
+      "yesterday_balance": 6233.87,
+      "daily_change": 89.13
+    },
+    {
+      "date": "2026-10-29",
+      "today_balance": 6339.11,
+      "yesterday_balance": 6323.0,
+      "daily_change": 16.11
+    },
+    {
+      "date": "2026-10-30",
+      "today_balance": 6234.68,
+      "yesterday_balance": 6339.11,
+      "daily_change": -104.43
+    }
+  ]
+}
