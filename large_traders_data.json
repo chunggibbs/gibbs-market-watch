@@ -4,21 +4,15 @@
   "futures_id": "TX",
   "contract_type": "all",
   "description": "臺股期貨前十大交易人（全部交易人、所有到期月份合計）",
-  "updated_at_taipei": "2026-11-05T02:28:27+08:00",
-  "latest_date": "2026-11-04",
-  "latest_buy_top10": 98722,
-  "latest_sell_top10": 88138,
-  "latest_net": 10584,
-  "streak_days": 12,
+  "updated_at_taipei": "2026-11-06T02:32:07+08:00",
+  "latest_date": "2026-11-05",
+  "latest_buy_top10": 101115,
+  "latest_sell_top10": 90590,
+  "latest_net": 10525,
+  "streak_days": 13,
   "streak_is_at_least": false,
   "signal": "blue",
   "data": [
-    {
-      "date": "2026-03-10",
-      "buy_top10": 55162,
-      "sell_top10": 51286,
-      "net": 3876
-    },
     {
       "date": "2026-03-11",
       "buy_top10": 58482,
@@ -984,6 +978,12 @@
       "buy_top10": 98722,
       "sell_top10": 88138,
       "net": 10584
+    },
+    {
+      "date": "2026-11-05",
+      "buy_top10": 101115,
+      "sell_top10": 90590,
+      "net": 10525
     }
   ]
 }
