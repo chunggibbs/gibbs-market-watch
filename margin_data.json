@@ -3,7 +3,7 @@
   "dataset": "TaiwanStockTotalMarginPurchaseShortSale",
   "name": "MarginPurchaseMoney",
   "unit": "TWD 100 million (億元)",
-  "updated_at_taipei": "2026-11-06T04:23:56+08:00",
+  "updated_at_taipei": "2026-11-07T03:45:43+08:00",
   "data": [
     {
       "date": "2024-11-01",
@@ -2932,6 +2932,12 @@
       "today_balance": 5764.09,
       "yesterday_balance": 5969.46,
       "daily_change": -205.37
+    },
+    {
+      "date": "2026-11-06",
+      "today_balance": 5340.53,
+      "yesterday_balance": 5764.09,
+      "daily_change": -423.56
     }
   ]
 }
