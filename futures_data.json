@@ -2,10 +2,10 @@
   "source": "FinMind",
   "dataset": "TaiwanFuturesInstitutionalInvestors",
   "description": "外資 TX + MTX/4 淨未平倉（大臺指等值口數）",
-  "updated_at_taipei": "2026-11-06T02:24:48+08:00",
-  "latest_date": "2026-11-05",
-  "latest_net_tx_equivalent": -95956.0,
-  "streak_days": 122,
+  "updated_at_taipei": "2026-11-07T01:46:11+08:00",
+  "latest_date": "2026-11-06",
+  "latest_net_tx_equivalent": -99701.75,
+  "streak_days": 123,
   "signal": "orange",
   "data": [
     {
@@ -739,6 +739,12 @@
       "tx_net": -95651,
       "mtx_net": -1220,
       "net_tx_equivalent": -95956.0
+    },
+    {
+      "date": "2026-11-06",
+      "tx_net": -99930,
+      "mtx_net": 913,
+      "net_tx_equivalent": -99701.75
     }
   ]
 }
