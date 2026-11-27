@@ -1,19 +1,15 @@
 {
   "symbol": "TWD=X",
   "source": "Yahoo Finance",
-  "date": "2026-11-26",
-  "updated_at_taipei": "2026-11-27 03:55:18 +0800",
-  "close": 32.941,
-  "ma20": 32.8548,
-  "ma60": 32.2551,
+  "date": "2026-11-27",
+  "updated_at_taipei": "2026-11-28 03:43:53 +0800",
+  "close": 32.965,
+  "ma20": 32.8872,
+  "ma60": 32.2804,
   "signal": "orange",
   "label": "橘燈｜台幣偏弱・注意持股",
   "definition": "20MA and 60MA are simple averages of 20 and 60 valid daily closes.",
   "data": [
-    {
-      "date": "2026-10-30",
-      "close": 32.5669
-    },
     {
       "date": "2026-11-02",
       "close": 32.6064
@@ -88,7 +84,11 @@
     },
     {
       "date": "2026-11-26",
-      "close": 32.941
+      "close": 33.189
+    },
+    {
+      "date": "2026-11-27",
+      "close": 32.965
     }
   ]
 }
