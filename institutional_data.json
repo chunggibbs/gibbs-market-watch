@@ -2,13 +2,13 @@
   "source": "FinMind",
   "dataset": "TaiwanStockTotalInstitutionalInvestors",
   "unit": "TWD 100 million (億元)",
-  "updated_at_taipei": "2026-11-27T03:11:40+08:00",
+  "updated_at_taipei": "2026-11-28T03:06:20+08:00",
   "foreign_sell_alert": {
     "type": "foreign_sell_over_threshold",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "triggered": false,
     "threshold_100m": -1000.0,
-    "actual_100m": -491.8113,
+    "actual_100m": -296.2807,
     "severity": "none",
     "icon": "",
     "message": ""
@@ -2361,6 +2361,34 @@
         "triggered": false,
         "threshold_100m": -1000.0,
         "actual_100m": -491.8113,
+        "severity": "none",
+        "icon": "",
+        "message": ""
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "foreign_investor": {
+        "buy_100m": 2877.2532,
+        "sell_100m": 3173.5339,
+        "net_buy_100m": -296.2807
+      },
+      "investment_trust": {
+        "buy_100m": 352.0965,
+        "sell_100m": 266.8903,
+        "net_buy_100m": 85.2062
+      },
+      "dealer_self": {
+        "buy_100m": 81.8925,
+        "sell_100m": 61.5765,
+        "net_buy_100m": 20.316
+      },
+      "foreign_sell_alert": {
+        "type": "foreign_sell_over_threshold",
+        "date": "2026-11-27",
+        "triggered": false,
+        "threshold_100m": -1000.0,
+        "actual_100m": -296.2807,
         "severity": "none",
         "icon": "",
         "message": ""
