@@ -6,7 +6,11 @@
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#fff;background:#101820}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}
-main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);letter-spacing:.12em;margin:0 0 8px}header p{color:#a6b7cc;margin:0 0 38px}
+main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);letter-spacing:.12em;margin:0 0 8px}header p{color:#a6b7cc;margin:0 0 20px}
+.nav-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:6px;margin:0 auto 24px;background:#162232;border-radius:14px;border:1px solid #29384d}
+.nav-tab{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:10px;color:#a6b7cc;text-decoration:none;font-size:15px;font-weight:700;letter-spacing:.06em;transition:background .15s,color .15s}
+.nav-tab:hover{color:#fff;background:#1e293b}
+.nav-tab.active{background:#25354c;color:#fff;box-shadow:0 2px 10px #0004}
 .card{background:#1e293b;border-radius:18px;padding:clamp(26px,7vw,55px);box-shadow:0 12px 40px #0004}
 .caption{color:#b7c8de;letter-spacing:.15em;font-size:17px}.rate{font-size:clamp(48px,7vw,72px);font-weight:750;letter-spacing:.015em;margin:0;font-variant-numeric:tabular-nums;white-space:nowrap}
 .rate-line{display:flex;align-items:center;justify-content:center;gap:24px;margin:28px 0 30px;flex-wrap:wrap}
@@ -52,6 +56,10 @@ main{width:min(100%,650px);text-align:center}h1{font-size:clamp(26px,6vw,40px);l
 </style>
 </head>
 <body><main><header><h1>GIBBS MARKET WATCH</h1><p>Financial Market Dashboard</p></header>
+<nav class="nav-tabs" aria-label="頁面切換">
+  <a class="nav-tab active" href="index.html" aria-current="page">市場總覽</a>
+  <a class="nav-tab" href="strategy.html">策略選股</a>
+</nav>
 <section class="card" id="card"><button class="chart-toggle" type="button" data-chart="fx" aria-expanded="false" aria-controls="chart-fx">USD / TWD <span class="chevron" aria-hidden="true">⌄</span></button><div class="rate-line"><div class="rate" id="rate">—</div>
 <div class="status"><span class="light" aria-hidden="true"></span><span id="status">讀取資料中…</span></div></div>
 <div class="chart-panel" id="chart-fx" hidden><p class="chart-heading">最近 20 個交易日</p><div class="chart-canvas"></div><div class="chart-tooltip" aria-live="polite"></div><div class="chart-legend"></div></div>
@@ -185,7 +193,7 @@ window.chartData={};
   window.chartData.large=payload;
   if(payload.futures_id!=='TX'||payload.contract_type!=='all')throw Error('商品或契約範圍不符');
   if(!Array.isArray(payload.data)||!payload.data.length)throw Error('資料為空');
-  const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&Number.isFinite(Number(r.buy_top10))&&Number.isFinite(Number(r.sell_top10))&&Number.isFinite(Number(r.net))&&Number(r.buy_top10)-Number(r.sell_top10)===Number(r.net)).sort((a,b)=>a.date.localeCompare(b.date));
+  const records=payload.data.filter(r=>/^\d{4}-\d{2}-\d{2}$/.test(r.date)&&Number.isFinite(Number(r.buy_top10))&&Number.isFinite(Number(r.sell_top10))&&Number.isFinite(Number(r.net))&&Number.isFinite(Number(r.net))&&Number(r.buy_top10)-Number(r.sell_top10)===Number(r.net)).sort((a,b)=>a.date.localeCompare(b.date));
   if(!records.length)throw Error('沒有有效交易日');
   const latest=records[records.length-1];
   const net=Number(latest.net),direction=Math.sign(net);
@@ -287,7 +295,7 @@ window.chartData={};
   const dots=config.series.map(z=>{const dot=el('circle',{r:5,fill:z.color,stroke:'#142033','stroke-width':2});svg.append(dot);return dot;});
   function select(i){i=Math.max(0,Math.min(rows.length-1,i));cursor.setAttribute('x1',x(i));cursor.setAttribute('x2',x(i));
    config.series.forEach((z,j)=>{dots[j].setAttribute('cx',x(i));dots[j].setAttribute('cy',y(z.read(rows[i])))});
-   tip.textContent=rows[i].date+'　'+config.series.map(z=>z.name+' '+(z.read(rows[i])>0?'+':'')+fmt(z.read(rows[i]),key==='fx'?4:2)+config.unit).join('　｜　');
+   tip.textContent=rows[i].date+' '+config.series.map(z=>z.name+' '+(z.read(rows[i])>0?'+':'')+fmt(z.read(rows[i]),key==='fx'?4:2)+config.unit).join(' ｜ ');
   }
   // Transparent hit targets work with taps without preventing vertical page scrolling.
   rows.forEach((r,i)=>{const left=i===0?L:x(i)-(iw/(rows.length-1))/2,right=i===rows.length-1?W-R:x(i)+(iw/(rows.length-1))/2;
