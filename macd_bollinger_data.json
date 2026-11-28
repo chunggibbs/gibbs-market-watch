@@ -1,0 +1,18 @@
+{
+  "strategy": "Filter_C_Stop8",
+  "updated_at": "2026-11-28 09:45:37 CST",
+  "scanned_stocks": 1965,
+  "total_signals": 0,
+  "market": {
+    "market_date": "2026-11-27",
+    "taiex_close": 39308.08,
+    "daily_change": 156.27,
+    "ma60": 45136.23,
+    "diff_ma60_pts": -5828.15,
+    "diff_ma60_pct": -12.91,
+    "is_green": false,
+    "regime_light": "🔴 紅燈（停止新買進）",
+    "stock_ref_date": "2026-11-27"
+  },
+  "top10": []
+}
