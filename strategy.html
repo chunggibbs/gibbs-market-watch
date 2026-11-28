@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101820"><title>策略選股 · Gibbs Market Watch</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#fff;background:#101820}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;justify-content:center;padding:24px}
+main{width:min(100%,650px);text-align:center}
+h1{font-size:clamp(26px,6vw,40px);letter-spacing:.12em;margin:0 0 8px}
+header p{color:#a6b7cc;margin:0 0 20px}
+
+/* 雙頁面切換導覽列（手機大觸控熱區） */
+.nav-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:6px;margin:0 auto 24px;background:#162232;border-radius:14px;border:1px solid #29384d}
+.nav-tab{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:10px;color:#a6b7cc;text-decoration:none;font-size:15px;font-weight:700;letter-spacing:.06em;transition:background .15s,color .15s}
+.nav-tab:hover{color:#fff;background:#1e293b}
+.nav-tab.active{background:#25354c;color:#fff;box-shadow:0 2px 10px #0004}
+
+.card{background:#1e293b;border-radius:18px;padding:28px 22px;box-shadow:0 12px 40px #0004}
+.caption{color:#b7c8de;letter-spacing:.12em;font-size:17px;font-weight:650;margin:0 0 18px}
+
+/* 大盤濾網狀態橫幅 */
+.regime-box{padding:20px 16px;border-radius:14px;background:#142033;border:1px solid #2c3e57}
+.regime-badge{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:clamp(18px,4.5vw,22px);font-weight:800;letter-spacing:.04em}
+.light{width:18px;height:18px;border-radius:50%;background:#8a95a6;flex-shrink:0}
+.green .regime-box{background:#132b24;border-color:#266b56}
+.green .light{background:#2ee59d;box-shadow:0 0 20px #2ee59d88}
+.green .regime-badge{color:#7ef7c4}
+.red .regime-box{background:#361c24;border-color:#8a3646}
+.red .light{background:#ff5c77;box-shadow:0 0 20px #ff5c7788}
+.red .regime-badge{color:#ff9aa9}
+
+.mkt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;text-align:center}
+.mkt-metric{background:#142033;border-radius:12px;padding:12px 8px}
+.mkt-label{color:#9ab0c9;font-size:12px;margin-bottom:4px}
+.mkt-val{font-size:clamp(16px,4vw,19px);font-weight:750;font-variant-numeric:tabular-nums}
+.pos{color:#ff8585}.neg{color:#6ee7b7}
+
+/* Top 10 候選股區塊 */
+.signals-card{margin-top:22px;padding:28px 20px;text-align:left}
+.signals-header{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.signals-header .caption{margin:0}
+.signals-meta{color:#9ab0c9;font-size:13px}
+
+.empty-state{padding:26px 14px;border-radius:12px;background:#142033;color:#b7c8de;text-align:center;font-size:15px;line-height:1.6}
+.warning-banner{margin-bottom:14px;padding:12px 14px;border-radius:12px;background:#3a1e26;border:1px solid #96394a;color:#ffd8de;font-size:14px;font-weight:650;line-height:1.5}
+
+/* 手機優先：卡片式清單（預設顯示，避免橫向捲軸） */
+.stock-list{display:flex;flex-direction:column;gap:12px}
+.stock-item{background:#142033;border:1px solid #28384f;border-radius:14px;padding:14px 16px}
+.stock-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:10px;border-bottom:1px solid #243349}
+.stock-id-wrap{display:flex;align-items:center;gap:10px}
+.rank-pill{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 7px;border-radius:8px;background:#24354d;color:#93c5fd;font-size:13px;font-weight:800;font-variant-numeric:tabular-nums}
+.stock-code{font-size:21px;font-weight:800;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.stock-price-wrap{text-align:right;font-variant-numeric:tabular-nums}
+.stock-close{font-size:20px;font-weight:800}
+.stock-chg{font-size:13px;font-weight:700;margin-left:6px}
+
+.stock-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 12px;padding-top:10px;font-size:13px}
+.metric-row{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.metric-k{color:#8fa6c2}
+.metric-v{font-weight:700;font-variant-numeric:tabular-nums;color:#e6effa}
+.stop-v{color:#ffb15b}
+
+/* 桌機寬螢幕（>= 640px）：切換為完整對齊數據表 */
+.desktop-table-wrap{display:none}
+@media(min-width:640px){
+  .stock-list{display:none}
+  .desktop-table-wrap{display:block;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+  th{color:#9ab0c9;font-weight:650;text-align:right;padding:10px 8px;border-bottom:1px solid #34445b;white-space:nowrap}
+  th:first-child,th:nth-child(2),td:first-child,td:nth-child(2){text-align:left}
+  td{padding:11px 8px;border-bottom:1px solid #263447;text-align:right;white-space:nowrap}
+  tr:last-child td{border-bottom:0}
+}
+
+.date{color:#b7c8de;margin-top:20px;font-size:13px;text-align:center}
+.note{color:#8193ac;font-size:12px;margin-top:14px;line-height:1.7;text-align:center}
+@media(max-width:390px){
+  body{padding:14px 10px}
+  .card,.signals-card{padding:22px 14px}
+  .mkt-grid{gap:6px}
+  .mkt-metric{padding:10px 4px}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>GIBBS MARKET WATCH</h1>
+    <p>MACD + Bollinger Triple-Filter Scanner</p>
+  </header>
+
+  <nav class="nav-tabs" aria-label="頁面切換">
+    <a class="nav-tab" href="index.html">市場總覽</a>
+    <a class="nav-tab active" href="strategy.html" aria-current="page">策略選股</a>
+  </nav>
+
+  <!-- 第一層：大盤 60MA 濾網狀態 -->
+  <section class="card" id="regime-card" aria-labelledby="regime-title">
+    <h2 class="caption" id="regime-title">大盤趨勢濾網（TAIEX vs 60MA）</h2>
+    <div class="regime-box">
+      <div class="regime-badge">
+        <span class="light" aria-hidden="true"></span>
+        <span id="regime-text">讀取策略資料中…</span>
+      </div>
+    </div>
+    <div class="mkt-grid">
+      <div class="mkt-metric">
+        <div class="mkt-label">加權收盤</div>
+        <div class="mkt-val" id="taiex-close">—</div>
+      </div>
+      <div class="mkt-metric">
+        <div class="mkt-label">季線 60MA</div>
+        <div class="mkt-val" id="taiex-ma60">—</div>
+      </div>
+      <div class="mkt-metric">
+        <div class="mkt-label">距離 60MA</div>
+        <div class="mkt-val" id="taiex-diff">—</div>
+      </div>
+    </div>
+    <div class="date" id="scan-date">掃描基準日：—</div>
+    <div class="note">策略版本：Filter_C_Stop8（大盤站上季線允許開新倉；跌破季線停止買進）</div>
+  </section>
+
+  <!-- 第二層：Top 10 候選股明細 -->
+  <section class="card signals-card" aria-labelledby="signals-title">
+    <div class="signals-header">
+      <h2 class="caption" id="signals-title">明日開盤關注 Top 10</h2>
+      <span class="signals-meta" id="signals-count">符合訊號：— 檔</span>
+    </div>
+
+    <div id="regime-warning" class="warning-banner" hidden>
+      ⛔ 目前大盤處於【🔴 紅燈（TAIEX &lt; 60MA）】，依 Filter_C_Stop8 紀律明日「不開新倉」。以下名單僅供觀察。
+    </div>
+
+    <div id="signals-body">
+      <div class="empty-state">讀取候選股名單中…</div>
+    </div>
+
+    <div class="date" id="updated-at">最後更新時間：—</div>
+    <div class="note">
+      排序依據：近 5 日平均成交金額（億）由高到低 · 單日成交量 ≥ 500 張<br>
+      進場：訊號日隔日開盤買進 · 出場：收盤跌破買進價 -8% 硬停損，或連 3 日收盤跌破 20MA
+    </div>
+  </section>
+</main>
+
+<script>
+(async () => {
+  const regimeCard = document.getElementById('regime-card');
+  const regimeText = document.getElementById('regime-text');
+  const signalsBody = document.getElementById('signals-body');
+  const fmtNum = (n, d = 2) => Number(n).toLocaleString('zh-TW', { minimumFractionDigits: d, maximumFractionDigits: d });
+
+  try {
+    const res = await fetch('macd_bollinger_data.json?v=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw Error('尚未取得策略掃描資料（macd_bollinger_data.json）');
+    const data = await res.json();
+    const m = data.market || {};
+    const top10 = Array.isArray(data.top10) ? data.top10 : [];
+
+    // 1. 渲染大盤 60MA 濾網狀態
+    const isGreen = Boolean(m.is_green);
+    regimeCard.classList.add(isGreen ? 'green' : 'red');
+    regimeText.textContent = m.regime_light || (isGreen ? '🟢 綠燈（允許買進）' : '🔴 紅燈（停止新買進）');
+
+    if (Number.isFinite(Number(m.taiex_close))) {
+      document.getElementById('taiex-close').textContent = fmtNum(m.taiex_close, 2);
+    }
+    if (Number.isFinite(Number(m.ma60))) {
+      document.getElementById('taiex-ma60').textContent = fmtNum(m.ma60, 2);
+    }
+    if (Number.isFinite(Number(m.diff_ma60_pct))) {
+      const pct = Number(m.diff_ma60_pct);
+      const diffEl = document.getElementById('taiex-diff');
+      diffEl.textContent = (pct > 0 ? '+' : '') + fmtNum(pct, 2) + '%';
+      diffEl.classList.add(pct >= 0 ? 'pos' : 'neg');
+    }
+
+    document.getElementById('scan-date').textContent =
+      `大盤基準日：${m.market_date || '—'}（個股基準日：${m.stock_ref_date || '—'}）`;
+    document.getElementById('signals-count').textContent =
+      `全市場符合：${data.total_signals ?? top10.length} 檔（掃描 ${data.scanned_stocks ?? '—'} 檔）`;
+    document.getElementById('updated-at').textContent =
+      `排程更新時間：${data.updated_at || '—'}`;
+
+    if (!isGreen) {
+      document.getElementById('regime-warning').hidden = false;
+    }
+
+    // 2. 渲染 Top 10 候選股（手機卡片版 + 桌機表格版）
+    if (!top10.length) {
+      signalsBody.innerHTML = '<div class="empty-state">今日無符合三重濾網進場條件之個股。</div>';
+      return;
+    }
+
+    // 手機卡片 HTML
+    const cardsHtml = top10.map(s => {
+      const chg = Number(s.change_pct || 0);
+      const chgCls = chg > 0 ? 'pos' : chg < 0 ? 'neg' : '';
+      const chgStr = (chg > 0 ? '+' : '') + fmtNum(chg, 2) + '%';
+      return `
+        <article class="stock-item">
+          <div class="stock-top">
+            <div class="stock-id-wrap">
+              <span class="rank-pill">#${s.rank}</span>
+              <span class="stock-code">${s.stock_id}</span>
+            </div>
+            <div class="stock-price-wrap">
+              <span class="stock-close">${fmtNum(s.close, 2)}</span>
+              <span class="stock-chg ${chgCls}">${chgStr}</span>
+            </div>
+          </div>
+          <div class="stock-metrics">
+            <div class="metric-row"><span class="metric-k">5日均量</span><span class="metric-v">${fmtNum(s.avg5_money_m, 2)} 億</span></div>
+            <div class="metric-row"><span class="metric-k">今日成交</span><span class="metric-v">${Number(s.volume_lots).toLocaleString('zh-TW')} 張</span></div>
+            <div class="metric-row"><span class="metric-k">月線 20MA</span><span class="metric-v">${fmtNum(s.ma20, 2)}</span></div>
+            <div class="metric-row"><span class="metric-k">-8% 停損參考</span><span class="metric-v stop-v">${fmtNum(s.ref_stop8_price, 2)}</span></div>
+          </div>
+        </article>`;
+    }).join('');
+
+    // 桌機表格 HTML
+    const rowsHtml = top10.map(s => {
+      const chg = Number(s.change_pct || 0);
+      const chgCls = chg > 0 ? 'pos' : chg < 0 ? 'neg' : '';
+      const chgStr = (chg > 0 ? '+' : '') + fmtNum(chg, 2) + '%';
+      return `
+        <tr>
+          <td>#${s.rank}</td>
+          <td><strong>${s.stock_id}</strong></td>
+          <td>${fmtNum(s.close, 2)}</td>
+          <td class="${chgCls}">${chgStr}</td>
+          <td>${fmtNum(s.avg5_money_m, 2)} 億</td>
+          <td>${Number(s.volume_lots).toLocaleString('zh-TW')}</td>
+          <td>${fmtNum(s.ma20, 2)}</td>
+          <td class="stop-v">${fmtNum(s.ref_stop8_price, 2)}</td>
+        </tr>`;
+    }).join('');
+
+    signalsBody.innerHTML = `
+      <div class="stock-list">${cardsHtml}</div>
+      <div class="desktop-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>排名</th>
+              <th>代號</th>
+              <th>收盤</th>
+              <th>漲跌幅</th>
+              <th>5日均量</th>
+              <th>成交張數</th>
+              <th>20MA</th>
+              <th>-8%停損價</th>
+            </tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      </div>`;
+  } catch (err) {
+    regimeText.textContent = '策略資料尚未就緒';
+    signalsBody.innerHTML = `<div class="empty-state">${err.message}<br>請先至 tw_stock_data 執行 MACD Bollinger Daily Scanner 同步資料。</div>`;
+  }
+})();
+</script>
+</body>
+</html>
